@@ -69,55 +69,47 @@ All architecture decisions and parameter updates have been validated against a p
 
 ---
 
-## 🏗️ System Architecture
+## 🏗️ System Architecture & Layer Breakdown
 
-```
-                                  ┌───────────────────────────┐
-                                  │   Enterprise Sources      │
-                                  │ SQL · CSV · PDFs · SOPs   │
-                                  └─────────────┬─────────────┘
-                                                │
-                        ┌───────────────────────┴───────────────────────┐
-                        ▼                                               ▼
-         ┌─────────────────────────────┐                 ┌─────────────────────────────┐
-         │     Semantic / Ontology     │                 │   Document Intelligence     │
-         │   RDF / OWL / SHACL / SPARQL│                 │ Chunking · Embeddings       │
-         └──────────────┬──────────────┘                 └──────────────┬──────────────┘
-                        │                                               │
-                        ▼                                               ▼
-         ┌─────────────────────────────┐                 ┌─────────────────────────────┐
-         │    Knowledge Graph (Neo4j)  │                 │    Vector Store (ChromaDB)  │
-         │  Entities · Relationships   │                 │ Dense Vector Index          │
-         └──────────────┬──────────────┘                 └──────────────┬──────────────┘
-                        │                                               │
-                        └───────────────────────┬───────────────────────┘
-                                                │
-                                                ▼
-                               ┌────────────────────────────────┐
-                               │  Hybrid Multi-Channel Search   │
-                               │  BM25 + Vector + Relational G  │
-                               │  (Candidate Pool Floor = 30)   │
-                               └────────────────┬───────────────┘
-                                                │
-                                                ▼
-                               ┌────────────────────────────────┐
-                               │     RRF Fusion Reranker        │
-                               │ + AC-C4 Entity-Conditional     │
-                               │   Intent Masking               │
-                               └────────────────┬───────────────┘
-                                                │
-                                                ▼
-                               ┌────────────────────────────────┐
-                               │   Grounded Copilot Engine      │
-                               │ Gemini LLM / Grounded Synthesizer│
-                               └────────────────┬───────────────┘
-                                                │
-                                                ▼
-                               ┌────────────────────────────────┐
-                               │ React 18 Enterprise Studio UI  │
-                               │  11 Interactive Dashboards     │
-                               └────────────────────────────────┘
-```
+![ContextIQ 3D Architecture Overview](assets/architecture/contextiq-3d-architecture.jpg)
+
+### Detailed Architecture Layer Breakdown
+
+#### 1. User Interface Layer
+- **React Studio UI (11 Dashboards)**: Enterprise web application providing interactive tools for executive overview, context exploration, knowledge graph inspection, ontology management, document intelligence, governance, and evaluation.
+- **RAG Copilot (Conversational AI)**: Grounded conversational chat interface with real-time evidence sidebars, citation tags, and graph path visualizations.
+- **REST API / SDK (Programmatic Access)**: FastAPI-powered OpenAPI specification enabling programmatic integration with external ERP, MES, and QMS enterprise workflows.
+- **Enterprise Persona Support**: Customized workflows tailored for Plant Engineers, Supply Chain Analysts, Quality Inspectors, and Enterprise Executives.
+
+#### 2. ContextIQ Core Engine
+- **Query Understanding Engine**: Performs natural language parsing, domain intent classification (`maintenance`, `supplier`, `quality`, `unsupported`), and entity extraction (canonical codes like `M001`, `B101`, `S001`).
+- **AC-C4 Intent Masking**: Entity-conditional intent refinement module that suppresses generic intent boosts for non-matching candidates whenever specific canonical entity IDs are extracted.
+- **Multi-Channel Hybrid Retrieval**: Simultaneous candidate retrieval across 3 channels:
+  1. *Lexical Channel*: BM25 keyword matcher ($k_1=1.5, b=0.75$).
+  2. *Semantic Vector Channel*: ChromaDB dense embeddings (`sentence-transformers/all-MiniLM-L6-v2`).
+  3. *Relational Graph Channel*: Neo4j multi-hop Cypher traversal ($\le 3$ hops).
+  *(Candidate pool floor set to $\max(\text{top\_k} \times 4, 30)$)*.
+- **Reciprocal Rank Fusion (RRF) Reranker**: Fuses rank positions across channels using $RRF\_Score(d) = \sum_{c \in C} \frac{1}{k + r_c(d)}$ with smoothing constant $k=60$.
+- **Relevance-Aware Diversity & Coverage**: De-duplicates overlapping document chunks and optimizes structural evidence coverage across source documents.
+- **Graph-RAG Multi-Hop Reasoning**: Synthesizes graph paths from Neo4j (e.g. `Machine M001 -> HAS_COMPONENT -> Bearing B101 -> SUPPLIED_BY -> Supplier S001`) with retrieved text chunks.
+- **Grounded Answer Generation**: Gemini 2.0 / 3.6 Flash LLM generation constrained by strict citation prompts, backed by a deterministic fallback synthesizer to maintain 100.00% groundedness pass rate.
+
+#### 3. Data & Knowledge Layer
+- **PostgreSQL 15 (Relational Enterprise Store)**: Hosts structured relational data across SAP ERP, MES, QMS, contracts, asset catalogs, bill of materials (BOM), work orders, and SPC defect logs.
+- **MongoDB / Document Store**: Stores raw unstructured documents, engineering SOPs, maintenance notes, equipment manuals, and audit logs.
+- **Neo4j 5.x (Knowledge Graph)**: Houses the enterprise knowledge graph built on RDF/OWL 2.0 ontologies, capturing 12,450 entity nodes and 31,820 semantic relationships (`HAS_COMPONENT`, `GOVERNED_BY`, `SUPPLIED_BY`).
+- **ChromaDB (Vector Store)**: Persistent vector database indexing 182 semantic chunks with 384-dimensional embeddings and metadata filtering.
+
+#### 4. Infrastructure Layer & Containerization
+- **Docker & Docker Compose**: Containerizes backend services, databases, vector indices, and frontend server for single-command orchestration.
+- **Nginx Reverse Proxy & FastAPI ASGI**: High-performance HTTP request routing, CORS management, and asynchronous request handling with Uvicorn.
+
+#### 5. Governance, Operations & Safety Guardrails
+- **Auth & Role-Based Access Control (RBAC)**: Enforces permission boundaries across sensitive operational data.
+- **Audit Logging**: Maintains complete query execution trails, provenance metadata, and access logs.
+- **Read-Only Guardrails**: Strict AST and parser validation blocking `DROP`, `DELETE`, `UPDATE`, `INSERT`, or `TRUNCATE` operations on database connections.
+- **Data Lineage & Provenance**: End-to-end tracking linking every generated claim back to exact document chunks (`DOC-XXX`) and database record IDs.
+- **Observability & Health Monitoring**: Continuous readiness and liveness probes monitoring PostgreSQL, Neo4j, ChromaDB, and Gemini API connectivity.
 
 ---
 
