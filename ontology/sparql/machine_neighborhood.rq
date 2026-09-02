@@ -1,0 +1,12 @@
+# Get machine metadata, sensors, supplier, and plant
+PREFIX : <http://enterprise-sce.org/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?machine ?machineType ?plant ?supplier ?sensor
+WHERE {
+    ?machine a :Machine ;
+             :machineType ?machineType .
+    OPTIONAL { ?machine :installedAt ?plant }
+    OPTIONAL { ?machine :suppliedBy ?supplier }
+    OPTIONAL { ?machine :hasSensor ?sensor }
+}

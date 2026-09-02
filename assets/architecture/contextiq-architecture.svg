@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%" style="background-color: #0f172a; font-family: system-ui, -apple-system, sans-serif;">
+  <defs>
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="graph-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="vector-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Title Header -->
+  <text x="600" y="45" text-anchor="middle" fill="#f8fafc" font-size="24" font-weight="700" letter-spacing="1">CONTEXTIQ — ENTERPRISE SEMANTIC CONTEXT ENGINE</text>
+  <text x="600" y="70" text-anchor="middle" fill="#94a3b8" font-size="13">Production-Hardened Hybrid Graph-RAG System Architecture</text>
+
+  <!-- Container Box -->
+  <rect x="30" y="90" width="1140" height="680" rx="12" fill="url(#card-grad)" stroke="#334155" stroke-width="1.5" filter="url(#shadow)" />
+
+  <!-- Layer 1: Enterprise Data Layer -->
+  <g transform="translate(60, 120)">
+    <rect x="0" y="0" width="1080" height="85" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1" />
+    <text x="20" y="30" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="0.5">1. ENTERPRISE DATA & INGESTION LAYER</text>
+    
+    <!-- Item 1 -->
+    <rect x="20" y="42" width="240" height="32" rx="4" fill="#0f172a" stroke="#334155" />
+    <text x="140" y="62" text-anchor="middle" fill="#e2e8f0" font-size="11" font-weight="600">Structured SQL / PostgreSQL</text>
+    
+    <!-- Item 2 -->
+    <rect x="280" y="42" width="240" height="32" rx="4" fill="#0f172a" stroke="#334155" />
+    <text x="400" y="62" text-anchor="middle" fill="#e2e8f0" font-size="11" font-weight="600">RDF / OWL Ontologies & SHACL</text>
+    
+    <!-- Item 3 -->
+    <rect x="540" y="42" width="240" height="32" rx="4" fill="#0f172a" stroke="#334155" />
+    <text x="660" y="62" text-anchor="middle" fill="#e2e8f0" font-size="11" font-weight="600">Unstructured SOPs & Documents</text>
+    
+    <!-- Item 4 -->
+    <rect x="800" y="42" width="260" height="32" rx="4" fill="#0f172a" stroke="#334155" />
+    <text x="930" y="62" text-anchor="middle" fill="#e2e8f0" font-size="11" font-weight="600">Synthetic Ground-Truth Dataset (30 TC)</text>
+  </g>
+
+  <!-- Down Arrows Layer 1 to Layer 2 -->
+  <path d="M 330 205 L 330 235" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 850 205 L 850 235" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Layer 2: Knowledge Storage Layer (Neo4j & ChromaDB) -->
+  <g transform="translate(60, 235)">
+    <!-- Left: Neo4j Knowledge Graph -->
+    <rect x="0" y="0" width="520" height="110" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+    <text x="20" y="30" fill="#34d399" font-size="12" font-weight="700">2A. KNOWLEDGE GRAPH (Neo4j 5.x)</text>
+    <text x="20" y="52" fill="#94a3b8" font-size="11">Entities: Machine, Sensor, Plant, Supplier, Material, SOP</text>
+    <text x="20" y="72" fill="#94a3b8" font-size="11">Relationships: HAS_COMPONENT, SUPPLIES, GOVERNED_BY</text>
+    <rect x="360" y="40" width="140" height="50" rx="6" fill="url(#graph-grad)" />
+    <text x="430" y="70" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">Neo4j Graph</text>
+
+    <!-- Right: ChromaDB Vector Store -->
+    <rect x="560" y="0" width="520" height="110" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
+    <text x="580" y="30" fill="#fbbf24" font-size="12" font-weight="700">2B. VECTOR DATABASE (ChromaDB)</text>
+    <text x="580" y="52" fill="#94a3b8" font-size="11">Embedding Model: sentence-transformers/all-MiniLM-L6-v2</text>
+    <text x="580" y="72" fill="#94a3b8" font-size="11">Document Chunks: 182 chunks with metadata filtering</text>
+    <rect x="920" y="40" width="140" height="50" rx="6" fill="url(#vector-grad)" />
+    <text x="990" y="70" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">ChromaDB Store</text>
+  </g>
+
+  <!-- Down Arrows Layer 2 to Layer 3 -->
+  <path d="M 320 345 L 320 375" stroke="#10b981" stroke-width="2" />
+  <path d="M 880 345 L 880 375" stroke="#f59e0b" stroke-width="2" />
+
+  <!-- Layer 3: Hybrid Retrieval & Reranking Engine -->
+  <g transform="translate(60, 375)">
+    <rect x="0" y="0" width="1080" height="145" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2" />
+    <text x="20" y="28" fill="#60a5fa" font-size="13" font-weight="700">3. MULTI-CHANNEL HYBRID RETRIEVAL & RERANKING ENGINE</text>
+    
+    <!-- Channel 1 -->
+    <rect x="20" y="42" width="320" height="40" rx="4" fill="#0f172a" stroke="#334155" />
+    <text x="180" y="67" text-anchor="middle" fill="#cbd5e1" font-size="11" font-weight="600">BM25 Lexical Retriever (Pool = 30)</text>
+
+    <!-- Channel 2 -->
+    <rect x="360" y="42" width="320" height="40" rx="4" fill="#0f172a" stroke="#334155" />
+    <text x="520" y="67" text-anchor="middle" fill="#cbd5e1" font-size="11" font-weight="600">ChromaDB Vector Retriever (Pool = 30)</text>
+
+    <!-- Channel 3 -->
+    <rect x="700" y="42" width="360" height="40" rx="4" fill="#0f172a" stroke="#334155" />
+    <text x="880" y="67" text-anchor="middle" fill="#cbd5e1" font-size="11" font-weight="600">Relational Candidate Generator (Graph Hops ≤ 3)</text>
+
+    <!-- Fusion Box -->
+    <rect x="20" y="94" width="1040" height="38" rx="6" fill="url(#primary-grad)" />
+    <text x="540" y="118" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">RRF Reranker (k=60) + AC-C4 Entity-Conditional Intent Masking + Relevance-Aware Diversity</text>
+  </g>
+
+  <!-- Down Arrow Layer 3 to Layer 4 -->
+  <path d="M 600 520 L 600 550" stroke="#3b82f6" stroke-width="2.5" />
+
+  <!-- Layer 4: Grounded Copilot & Reasoning -->
+  <g transform="translate(60, 550)">
+    <rect x="0" y="0" width="1080" height="80" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5" />
+    <text x="20" y="28" fill="#c084fc" font-size="12" font-weight="700">4. GROUNDED REASONING & FAITHFULNESS AUDIT ENGINE</text>
+
+    <rect x="20" y="38" width="500" height="32" rx="4" fill="#0f172a" stroke="#334155" />
+    <text x="270" y="58" text-anchor="middle" fill="#e2e8f0" font-size="11" font-weight="600">Google Gemini 2.0 Flash / Grounded Synthesizer</text>
+
+    <rect x="540" y="38" width="520" height="32" rx="4" fill="#0f172a" stroke="#334155" />
+    <text x="800" y="58" text-anchor="middle" fill="#34d399" font-size="11" font-weight="700">100% Groundedness Pass Rate · Zero Hallucination Audit</text>
+  </g>
+
+  <!-- Down Arrow Layer 4 to Layer 5 -->
+  <path d="M 600 630 L 600 655" stroke="#8b5cf6" stroke-width="2" />
+
+  <!-- Layer 5: React Enterprise Studio & Observability -->
+  <g transform="translate(60, 655)">
+    <rect x="0" y="0" width="1080" height="90" rx="8" fill="#1e293b" stroke="#64748b" stroke-width="1" />
+    <text x="20" y="26" fill="#f8fafc" font-size="12" font-weight="700">5. REACT 18 ENTERPRISE STUDIO & OBSERVABILITY DASHBOARDS</text>
+
+    <text x="20" y="48" fill="#94a3b8" font-size="11">11 Interactive Dashboards: Executive Overview · Context Tree · Knowledge Graph (ReactFlow) · Ontology Studio · Document Intelligence · Copilot</text>
+    <text x="20" y="68" fill="#38bdf8" font-size="11" font-weight="700">Verified Metrics: P@1 = 26.67% (+3.34 pp) | R@3 = 40.00% (+6.67 pp) | MRR = 33.17% (+2.95 pp) | 148/148 Pytest Tests</text>
+  </g>
+</svg>

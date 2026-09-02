@@ -1,0 +1,101 @@
+employee_id,name,role,department,plant_id,email,hire_date
+E001,Robert Peterson,Operator,Production,P001,angela83@allen.info,2013-06-15
+E002,Cynthia Alvarez,Quality Engineer,Quality,P002,bwest@phillips.com,2016-07-18
+E003,Kevin Kennedy,Safety Officer,HSE,P003,ronald85@warner-nelson.com,2016-02-18
+E004,Nathan Stewart,Quality Engineer,Quality,P001,jamesrodgers@hardy-bray.net,2020-10-27
+E005,Veronica Wall,Quality Engineer,Quality,P002,jeremy24@erickson.com,2015-06-20
+E006,Anthony Carter,Quality Engineer,Quality,P003,danamullins@salas.com,2022-05-13
+E007,Jeremiah Lopez,Maintenance Engineer,Maintenance,P001,kingmichelle@short.info,2018-08-09
+E008,Mark Brown,Maintenance Engineer,Maintenance,P002,lisaavery@mcknight.net,2023-06-12
+E009,Lisa Gibbs,Safety Officer,HSE,P003,kimberlyjames@evans-chapman.biz,2013-01-23
+E010,Marc Lynch,Operator,Production,P001,mezajared@baker.com,2016-03-13
+E011,Juan Moore,Quality Engineer,Quality,P002,mhayes@carter-hall.com,2017-08-16
+E012,Jordan Mcdaniel,Safety Officer,HSE,P003,kristin93@wilson-walker.com,2015-12-29
+E013,Samantha Jones,Operator,Production,P001,lauralarson@morse.com,2016-05-06
+E014,Terri Mason,Production Manager,Operations,P002,mkim@preston.com,2023-03-02
+E015,Allison Perez,Safety Officer,HSE,P003,keyemily@johnston-hines.com,2020-12-25
+E016,Matthew Moon,Maintenance Engineer,Maintenance,P001,wendygraham@costa-harrison.biz,2020-01-07
+E017,Michael Hodge,Safety Officer,HSE,P002,robert74@landry.info,2020-11-11
+E018,David Wilson,Production Manager,Operations,P003,ahancock@booth.net,2017-06-16
+E019,Peter Garrett,Safety Officer,HSE,P001,harrisandrea@kim-wolfe.com,2022-03-10
+E020,Mark Lloyd,Quality Engineer,Quality,P002,lancesmith@davis-gay.com,2020-03-19
+E021,Bruce Collier,Production Manager,Operations,P003,scantu@thornton.info,2014-03-26
+E022,Juan Reyes,Maintenance Engineer,Maintenance,P001,michellehill@morgan-french.com,2022-10-29
+E023,Diane Evans,Quality Engineer,Quality,P002,cgrimes@washington.biz,2015-03-29
+E024,Frank Lopez,Quality Engineer,Quality,P003,ashleyhall@williams-garner.biz,2010-12-24
+E025,Matthew Hoover,Production Manager,Operations,P001,tylerjohnson@sanford.info,2020-08-10
+E026,Thomas Smith,Quality Engineer,Quality,P002,robertpena@jones.com,2018-08-29
+E027,Jennifer Miller,Maintenance Engineer,Maintenance,P003,melissa86@sims-clay.info,2021-02-09
+E028,Amanda Jones,Operator,Production,P001,wendy16@hodges.com,2012-10-31
+E029,Michael Berger,Safety Officer,HSE,P002,nguyenbrian@brooks-thomas.net,2023-03-28
+E030,Michael White,Production Manager,Operations,P003,christianpitts@vega.com,2012-04-02
+E031,David Scott,Quality Engineer,Quality,P001,nolansteven@byrd-moore.info,2012-03-27
+E032,Victoria Evans,Safety Officer,HSE,P002,dvaughn@gonzalez-cruz.info,2020-04-01
+E033,James Howard,Operator,Production,P003,victoria40@foster.com,2013-03-26
+E034,Natasha Wall,Quality Engineer,Quality,P001,kimberly39@robinson-lee.com,2013-06-18
+E035,Michelle Hopkins,Operator,Production,P002,courtneyberger@williams.com,2020-07-13
+E036,Ann Phillips,Production Manager,Operations,P003,ithompson@walter.com,2017-08-05
+E037,Dawn Summers,Safety Officer,HSE,P001,scoffey@harrell.com,2018-12-01
+E038,Vincent Dalton,Operator,Production,P002,zcoffey@diaz.net,2017-05-15
+E039,Jacob Curry,Safety Officer,HSE,P003,brenda51@hall.net,2018-07-11
+E040,Leonard Holland,Production Manager,Operations,P001,tblankenship@ortiz.com,2020-12-11
+E041,Audrey Young DDS,Safety Officer,HSE,P002,qchavez@horton.com,2010-10-22
+E042,Mary Bass,Safety Officer,HSE,P003,rcrosby@vaughn.info,2011-07-15
+E043,David Cox,Maintenance Engineer,Maintenance,P001,amy50@hill-donaldson.info,2016-06-12
+E044,Daniel Fowler,Maintenance Engineer,Maintenance,P002,williamsmatthew@buchanan.com,2012-01-11
+E045,Kristen Willis,Quality Engineer,Quality,P003,markhernandez@smith.com,2012-03-17
+E046,Rebecca Rodriguez,Operator,Production,P001,andersonmichael@chapman.com,2019-12-14
+E047,Cameron Fisher,Maintenance Engineer,Maintenance,P002,reesethomas@palmer-rodriguez.net,2016-09-19
+E048,Luis Acosta,Operator,Production,P003,stephen00@boone-simmons.com,2011-01-12
+E049,Theodore Jones Jr.,Production Manager,Operations,P001,cameronhill@richards.org,2011-04-05
+E050,Jody Jacobs,Production Manager,Operations,P002,mcguiredanny@curtis.com,2018-01-15
+E051,Stephen Gutierrez,Production Manager,Operations,P003,uross@edwards.com,2019-08-30
+E052,Christian Leblanc,Maintenance Engineer,Maintenance,P001,davischristopher@davis-rodgers.com,2015-06-24
+E053,Laurie Hoffman,Safety Officer,HSE,P002,elizabeth65@pugh.com,2019-03-30
+E054,Lindsay Bell,Safety Officer,HSE,P003,ericolson@bell.com,2014-01-15
+E055,Donald Perez,Maintenance Engineer,Maintenance,P001,xbruce@austin.com,2013-12-05
+E056,Donald Farmer,Operator,Production,P002,michael22@sandoval.com,2023-09-02
+E057,Joseph Bennett,Quality Engineer,Quality,P003,xpeterson@griffith-frank.org,2023-11-25
+E058,Sophia Moore,Maintenance Engineer,Maintenance,P001,craigjoseph@coleman.com,2021-02-28
+E059,Ashley Jordan,Safety Officer,HSE,P002,erika97@estrada.org,2013-03-18
+E060,Dan Dougherty,Maintenance Engineer,Maintenance,P003,kathrynroberts@smith.biz,2020-05-05
+E061,James Padilla,Production Manager,Operations,P001,charles06@stevens.com,2020-04-22
+E062,Laura Mckinney,Production Manager,Operations,P002,zroberts@burch.org,2010-03-18
+E063,Michael Cox,Quality Engineer,Quality,P003,prichard@chapman-warren.biz,2016-06-14
+E064,Nichole Walker,Safety Officer,HSE,P001,charlesschultz@hicks.com,2013-07-18
+E065,Charles Gonzalez,Operator,Production,P002,kathleenrios@bean.info,2019-11-28
+E066,Justin Riley,Production Manager,Operations,P003,michelle52@jones-ramos.com,2023-03-07
+E067,Leslie Bell,Production Manager,Operations,P001,collinsshannon@wood.com,2019-07-08
+E068,Vanessa Davis,Production Manager,Operations,P002,jford@huang.com,2020-03-31
+E069,John Hernandez,Production Manager,Operations,P003,hayeslisa@haas-miller.com,2014-06-20
+E070,Michael Ritter,Quality Engineer,Quality,P001,michaelhardin@ortiz-morgan.org,2020-11-02
+E071,Mark Cook,Operator,Production,P002,cody64@cummings-douglas.org,2015-04-28
+E072,Felicia Aguilar,Quality Engineer,Quality,P003,sabrinacollins@hale.com,2022-10-30
+E073,James Conner,Production Manager,Operations,P001,elizabethcalderon@osborn.biz,2022-11-22
+E074,Alicia Parker,Production Manager,Operations,P002,matthewmiranda@perez.com,2016-08-15
+E075,Ryan Garcia,Operator,Production,P003,stanleynancy@anderson.org,2018-11-17
+E076,Carol Kim,Production Manager,Operations,P001,udiaz@montes.com,2010-03-08
+E077,Rachel Young,Safety Officer,HSE,P002,kylestokes@mckee-lee.org,2011-02-06
+E078,Mrs. Diane Reyes,Safety Officer,HSE,P003,mburch@taylor.com,2021-02-21
+E079,Ashley Singleton,Production Manager,Operations,P001,mitchellkathryn@cole-palmer.biz,2015-03-01
+E080,Thomas Velasquez,Safety Officer,HSE,P002,sarah60@shaw-young.com,2017-11-26
+E081,Alfred Galvan,Maintenance Engineer,Maintenance,P003,lacey20@lowery-kennedy.com,2014-04-07
+E082,Julie Gilbert,Safety Officer,HSE,P001,smithjason@dunn.org,2015-08-16
+E083,Ashley Roberts,Maintenance Engineer,Maintenance,P002,david36@bauer.info,2012-03-06
+E084,Alexis Robertson,Operator,Production,P003,jennifercarter@mendez.org,2016-12-05
+E085,Matthew Miller,Quality Engineer,Quality,P001,carlos88@hartman.info,2010-10-01
+E086,James Brooks,Safety Officer,HSE,P002,kellycarlos@quinn.com,2018-03-08
+E087,Nancy Cook,Maintenance Engineer,Maintenance,P003,bellmatthew@thompson.info,2012-01-09
+E088,Robin Brown,Production Manager,Operations,P001,mjohnson@moody.com,2017-04-30
+E089,Kaylee Hays,Quality Engineer,Quality,P002,wking@lee.com,2013-12-09
+E090,Robert Kim,Maintenance Engineer,Maintenance,P003,ypaul@beltran-crawford.info,2012-12-18
+E091,Robert Adams,Safety Officer,HSE,P001,acostachristian@carney.com,2018-03-17
+E092,Matthew Parker,Safety Officer,HSE,P002,cjackson@west-acosta.com,2021-04-03
+E093,Jessica Fowler,Production Manager,Operations,P003,jonesdana@palmer-brady.com,2013-09-09
+E094,Brenda Lawson,Production Manager,Operations,P001,ejohnson@osborne.com,2020-10-22
+E095,Keith Jacobs,Production Manager,Operations,P002,xrush@hines-berry.net,2017-08-06
+E096,Ernest Ramirez,Operator,Production,P003,johnsonjacob@hughes.com,2020-07-03
+E097,Cindy Carr,Operator,Production,P001,igonzalez@hayes.info,2013-02-27
+E098,Rita Ponce DVM,Maintenance Engineer,Maintenance,P002,jenna88@vance-york.com,2018-11-30
+E099,Katie Martinez,Safety Officer,HSE,P003,laurayoung@johnson-spencer.com,2018-03-16
+E100,William Anderson,Operator,Production,P001,jonesraymond@higgins.org,2018-11-07

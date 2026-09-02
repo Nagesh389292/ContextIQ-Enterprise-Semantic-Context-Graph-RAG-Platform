@@ -1,0 +1,20 @@
+@use '../../styles/variables' as *;
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+
+  .app-content {
+    flex: 1;
+    margin-left: 260px;
+    margin-top: 60px;
+    padding: $space-6;
+    min-height: calc(100vh - 60px);
+
+    .content-container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+  }
+}

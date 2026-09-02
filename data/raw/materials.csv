@@ -1,0 +1,41 @@
+material_id,name,category,unit,unit_cost,lead_time_days,supplier_id
+MAT001,Circuit Board 72BL,Circuit Board,kg,937.92,13,S004
+MAT002,Steel Plate 47PE,Steel Plate,piece,1499.37,34,S013
+MAT003,Bearing 78GD,Bearing,litre,2197.41,22,S002
+MAT004,Controller 80FW,Controller,kg,2195.63,8,S001
+MAT005,Motor 32AF,Motor,meter,2040.98,37,S012
+MAT006,Pump 73ZD,Pump,meter,2367.39,13,S003
+MAT007,Battery Module 26AY,Battery Module,meter,2411.09,37,S009
+MAT008,Controller 47SB,Controller,litre,1000.49,45,S012
+MAT009,Sensor Unit 87JM,Sensor Unit,meter,306.91,17,S008
+MAT010,Motor 43DL,Motor,piece,1472.83,17,S006
+MAT011,Circuit Board 80VU,Circuit Board,piece,182.13,43,S004
+MAT012,Bearing 00LE,Bearing,piece,2264.02,24,S004
+MAT013,Motor 88KD,Motor,kg,699.8,34,S009
+MAT014,Controller 81LE,Controller,kg,1809.76,39,S009
+MAT015,Circuit Board 91RP,Circuit Board,kg,1962.63,29,S008
+MAT016,Controller 61KP,Controller,piece,1649.16,25,S002
+MAT017,Hydraulic Fluid 99CN,Hydraulic Fluid,meter,2160.27,6,S007
+MAT018,Motor 16QL,Motor,meter,1821.89,9,S001
+MAT019,Controller 98UQ,Controller,kg,1343.03,11,S004
+MAT020,Hydraulic Fluid 35PQ,Hydraulic Fluid,litre,1159.26,7,S003
+MAT021,Lubricant 62QP,Lubricant,piece,131.22,37,S013
+MAT022,Bearing 47UW,Bearing,kg,419.95,34,S002
+MAT023,Lubricant 10DN,Lubricant,meter,2256.59,13,S004
+MAT024,Hydraulic Fluid 91EI,Hydraulic Fluid,meter,666.68,32,S001
+MAT025,Battery Module 38QI,Battery Module,meter,391.22,21,S007
+MAT026,Controller 51PX,Controller,piece,1871.2,6,S001
+MAT027,Bearing 42CI,Bearing,meter,1259.61,36,S010
+MAT028,Pump 49ZP,Pump,piece,2129.1,7,S001
+MAT029,Circuit Board 80QJ,Circuit Board,kg,1012.42,39,S002
+MAT030,Controller 41IQ,Controller,piece,1550.36,29,S010
+MAT031,Circuit Board 11VJ,Circuit Board,litre,2337.09,16,S010
+MAT032,Sensor Unit 24SM,Sensor Unit,litre,992.49,45,S004
+MAT033,Battery Module 35NR,Battery Module,litre,2322.9,7,S008
+MAT034,Bearing 48FQ,Bearing,piece,187.79,16,S008
+MAT035,Steel Plate 01OB,Steel Plate,kg,2333.48,7,S005
+MAT036,Controller 40AV,Controller,litre,398.58,37,S006
+MAT037,Battery Module 24KV,Battery Module,piece,1671.32,38,S010
+MAT038,Battery Module 78TB,Battery Module,piece,2347.63,11,S015
+MAT039,Battery Module 80HE,Battery Module,piece,1857.33,12,S002
+MAT040,Battery Module 28CX,Battery Module,kg,1795.44,16,S005

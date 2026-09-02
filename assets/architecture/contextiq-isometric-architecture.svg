@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%" style="background-color: #0b0f19; font-family: system-ui, -apple-system, sans-serif;">
+  <defs>
+    <linearGradient id="iso-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <filter id="glow-blue" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="1000" height="700" fill="url(#iso-bg)" />
+
+  <!-- Header -->
+  <text x="500" y="45" text-anchor="middle" fill="#f3f4f6" font-size="22" font-weight="700" letter-spacing="1">CONTEXTIQ — ISOMETRIC SYSTEM LAYERS</text>
+  <text x="500" y="70" text-anchor="middle" fill="#9ca3af" font-size="12">3D Conceptual Layer Stack representation of Enterprise Graph-RAG Engine</text>
+
+  <!-- Isometric Stack Group -->
+  <g transform="translate(500, 160)">
+
+    <!-- Plane 5: React Enterprise Studio UI (Top Layer) -->
+    <g transform="translate(0, 0)">
+      <polygon points="0,-35 340,60 0,155 -340,60" fill="#1e293b" fill-opacity="0.9" stroke="#38bdf8" stroke-width="2" />
+      <text x="0" y="45" text-anchor="middle" fill="#38bdf8" font-size="14" font-weight="700">Layer 5: React 18 Enterprise Studio UI (11 Dashboards)</text>
+      <text x="0" y="65" text-anchor="middle" fill="#94a3b8" font-size="11">Executive · Graph Visualizer · Evaluation Center</text>
+    </g>
+
+    <!-- Connectors 5 to 4 -->
+    <line x1="-250" y1="80" x2="-250" y2="150" stroke="#38bdf8" stroke-dasharray="4,4" stroke-width="1.5" />
+    <line x1="250" y1="80" x2="250" y2="150" stroke="#38bdf8" stroke-dasharray="4,4" stroke-width="1.5" />
+
+    <!-- Plane 4: Grounded Copilot & Reasoning -->
+    <g transform="translate(0, 95)">
+      <polygon points="0,-35 340,60 0,155 -340,60" fill="#1e1b4b" fill-opacity="0.85" stroke="#818cf8" stroke-width="2" />
+      <text x="0" y="45" text-anchor="middle" fill="#a5b4fc" font-size="14" font-weight="700">Layer 4: Grounded LLM Copilot & Citations</text>
+      <text x="0" y="65" text-anchor="middle" fill="#c7d2fe" font-size="11">Google Gemini API · 100% Groundedness Pass Rate</text>
+    </g>
+
+    <!-- Connectors 4 to 3 -->
+    <line x1="-250" y1="175" x2="-250" y2="245" stroke="#818cf8" stroke-dasharray="4,4" stroke-width="1.5" />
+    <line x1="250" y1="175" x2="250" y2="245" stroke="#818cf8" stroke-dasharray="4,4" stroke-width="1.5" />
+
+    <!-- Plane 3: Hybrid Retrieval & AC-C4 Reranking Engine -->
+    <g transform="translate(0, 190)">
+      <polygon points="0,-35 340,60 0,155 -340,60" fill="#064e3b" fill-opacity="0.85" stroke="#34d399" stroke-width="2" />
+      <text x="0" y="45" text-anchor="middle" fill="#34d399" font-size="14" font-weight="700">Layer 3: BM25 + Vector + Relational Graph Fusion</text>
+      <text x="0" y="65" text-anchor="middle" fill="#a7f3d0" font-size="11">RRF Reranker + AC-C4 Intent Masking (Pool = 30)</text>
+    </g>
+
+    <!-- Connectors 3 to 2 -->
+    <line x1="-250" y1="270" x2="-250" y2="340" stroke="#34d399" stroke-dasharray="4,4" stroke-width="1.5" />
+    <line x1="250" y1="270" x2="250" y2="340" stroke="#34d399" stroke-dasharray="4,4" stroke-width="1.5" />
+
+    <!-- Plane 2: Neo4j Knowledge Graph & ChromaDB Vector Store -->
+    <g transform="translate(0, 285)">
+      <polygon points="0,-35 340,60 0,155 -340,60" fill="#451a03" fill-opacity="0.85" stroke="#fbbf24" stroke-width="2" />
+      <text x="0" y="45" text-anchor="middle" fill="#fbbf24" font-size="14" font-weight="700">Layer 2: Neo4j Graph + ChromaDB Vector Index</text>
+      <text x="0" y="65" text-anchor="middle" fill="#fde68a" font-size="11">50 Machines · 150 Sensors · 182 Document Chunks</text>
+    </g>
+
+    <!-- Connectors 2 to 1 -->
+    <line x1="-250" y1="365" x2="-250" y2="435" stroke="#fbbf24" stroke-dasharray="4,4" stroke-width="1.5" />
+    <line x1="250" y1="365" x2="250" y2="435" stroke="#fbbf24" stroke-dasharray="4,4" stroke-width="1.5" />
+
+    <!-- Plane 1: Enterprise Raw Data & Ontology Schemas (Base Layer) -->
+    <g transform="translate(0, 380)">
+      <polygon points="0,-35 340,60 0,155 -340,60" fill="#111827" fill-opacity="0.95" stroke="#9ca3af" stroke-width="2" />
+      <text x="0" y="45" text-anchor="middle" fill="#f3f4f6" font-size="14" font-weight="700">Layer 1: Enterprise SQL Data & RDF/OWL Ontologies</text>
+      <text x="0" y="65" text-anchor="middle" fill="#d1d5db" font-size="11">PostgreSQL Schemas · SHACL Constraints · SPARQL</text>
+    </g>
+
+  </g>
+</svg>

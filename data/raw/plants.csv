@@ -1,0 +1,4 @@
+plant_id,name,location,country,established,capacity
+P001,Northgate Assembly Plant,"Detroit, MI",USA,2008-03-01,500
+P002,Eastside Manufacturing Hub,"Cleveland, OH",USA,2012-07-15,350
+P003,Southern Components Facility,"Nashville, TN",USA,2018-01-20,280

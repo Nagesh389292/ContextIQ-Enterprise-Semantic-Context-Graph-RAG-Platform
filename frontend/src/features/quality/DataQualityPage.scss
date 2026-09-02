@@ -1,0 +1,32 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.quality-page {
+  display: flex; flex-direction: column; gap: $space-5;
+  .page-header { @include flex-between; h1 { font-size: 22px; color: var(--text-primary); } .subtitle { color: var(--text-muted); font-size: 13px; margin-top: 2px; } .overall-score-badge { font-size: 13px; font-weight: 600; color: $color-success; background: rgba(16, 185, 129, 0.12); padding: 6px 14px; border-radius: $radius-full; } }
+
+  .quality-metrics-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: $space-4;
+    .q-card { @include card-style; text-align: center; .q-title { font-size: 12px; color: var(--text-muted); } .q-val { font-size: 26px; font-weight: 700; color: var(--text-primary); margin-top: 4px; display: block; } }
+  }
+
+  .issues-card {
+    @include card-style; padding: 0; overflow: hidden;
+    h2 { font-size: 16px; padding: $space-4; border-bottom: 1px solid var(--border-color); color: var(--text-primary); }
+
+    .issues-table {
+      width: 100%; border-collapse: collapse; text-align: left;
+      th { font-size: 11px; text-transform: uppercase; color: var(--text-muted); padding: $space-3 $space-4; border-bottom: 1px solid var(--border-color); }
+      td { font-size: 13px; color: var(--text-primary); padding: $space-3 $space-4; border-bottom: 1px solid var(--border-color); }
+
+      .sev-badge {
+        display: flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: $radius-sm; width: fit-content;
+        &.critical { background: rgba(239, 68, 68, 0.15); color: #EF4444; }
+        &.warning { background: rgba(245, 158, 11, 0.15); color: #F59E0B; }
+      }
+
+      .msg-text { font-weight: 500; }
+      .rule-sub { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+    }
+  }
+}

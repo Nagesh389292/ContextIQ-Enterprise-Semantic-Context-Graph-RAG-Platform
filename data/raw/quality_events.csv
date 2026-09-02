@@ -1,0 +1,151 @@
+quality_id,order_id,machine_id,inspector_id,inspection_type,result,defect_type,defect_count,notes,inspection_time
+QE-00001,PO-00359,M029,E090,final,pass,none,0,,2023-09-01T00:18:57
+QE-00002,PO-00102,M046,E095,incoming,fail,welding-defect,15,By first avoid letter military campaign stop necessary.,2024-03-17T08:21:35
+QE-00003,PO-00417,M045,E085,incoming,fail,surface-finish,15,Consider whom item treat area buy check clearly follow remember generation wait thus suffer economy play.,2023-08-30T10:07:13
+QE-00004,PO-00239,M031,E078,in-process,pass,none,0,,2023-04-22T23:09:58
+QE-00005,PO-00468,M024,E083,in-process,pass,none,0,,2024-06-27T17:45:42
+QE-00006,PO-00441,M021,E085,supplier-audit,pass,none,0,,2023-01-24T20:09:51
+QE-00007,PO-00058,M023,E086,supplier-audit,fail,dimensional,6,Ever person pass behavior political option oil commercial person top front under American tell ball.,2023-08-08T13:39:31
+QE-00008,PO-00066,M033,E074,supplier-audit,pass,none,0,,2024-09-27T08:17:25
+QE-00009,PO-00285,M042,E073,final,pass,none,0,,2024-02-19T03:05:49
+QE-00010,PO-00303,M027,E078,in-process,fail,coating-failure,18,Enough decision occur peace air threat nation politics few each southern image law read citizen.,2023-05-04T20:21:10
+QE-00011,PO-00175,M014,E097,supplier-audit,pass,none,0,,2024-09-01T12:40:19
+QE-00012,PO-00176,M035,E093,in-process,pass,none,0,,2023-05-15T18:32:48
+QE-00013,PO-00477,M046,E089,supplier-audit,pass,none,0,,2023-03-31T03:07:57
+QE-00014,PO-00285,M007,E097,supplier-audit,pass,none,0,,2023-05-18T04:07:17
+QE-00015,PO-00208,M005,E090,incoming,fail,welding-defect,20,Machine daughter parent fine responsibility safe team wish candidate have no five letter.,2024-08-22T10:52:57
+QE-00016,PO-00331,M043,E072,incoming,pass,none,0,,2023-06-19T08:34:38
+QE-00017,PO-00463,M049,E091,incoming,pass,none,0,,2024-08-11T08:57:05
+QE-00018,PO-00077,M029,E088,final,fail,surface-finish,13,Last cell anything war ten industry while total spend value return.,2024-04-23T11:05:48
+QE-00019,PO-00349,M021,E080,final,pass,none,0,,2024-12-14T18:06:40
+QE-00020,PO-00469,M023,E073,incoming,pass,none,0,,2024-04-20T07:00:49
+QE-00021,PO-00066,M019,E072,final,pass,none,0,,2024-12-01T05:16:06
+QE-00022,PO-00028,M001,E093,final,fail,functional-test-fail,4,Several marriage method material final age war measure whom Democrat.,2024-10-31T06:49:24
+QE-00023,PO-00016,M016,E084,supplier-audit,fail,welding-defect,11,Any example our successful pull experience account blue care enough hand idea.,2024-07-07T04:25:21
+QE-00024,PO-00196,M028,E088,in-process,fail,welding-defect,6,Hundred now crime network available mean share.,2024-01-05T04:14:41
+QE-00025,PO-00285,M025,E097,final,fail,surface-finish,14,Stay perhaps particularly campaign benefit health would newspaper hand certain own.,2023-05-01T03:45:02
+QE-00026,PO-00447,M043,E075,in-process,fail,welding-defect,1,Matter and case four listen lead paper middle foreign party class wrong school.,2023-02-26T01:26:32
+QE-00027,PO-00454,M032,E092,supplier-audit,pass,none,0,,2023-04-16T19:02:36
+QE-00028,PO-00329,M027,E098,supplier-audit,fail,dimensional,20,Order medical meeting majority none little admit former body indicate film.,2024-12-23T22:15:15
+QE-00029,PO-00093,M030,E087,supplier-audit,fail,coating-failure,18,Ago listen whose situation simply officer return on color pick people subject challenge quite all way.,2024-09-29T07:14:21
+QE-00030,PO-00182,M015,E076,supplier-audit,fail,coating-failure,20,Course kid industry include data maybe particularly likely.,2023-01-07T02:30:18
+QE-00031,PO-00122,M046,E087,final,pass,none,0,,2023-11-16T10:34:18
+QE-00032,PO-00018,M003,E089,supplier-audit,pass,none,0,,2024-07-01T19:57:46
+QE-00033,PO-00298,M031,E093,incoming,fail,welding-defect,5,Relationship million night your long heavy what least.,2024-07-21T11:38:37
+QE-00034,PO-00385,M050,E079,supplier-audit,conditional,none,0,Garden great sign return poor really particular court east newspaper different win father eye debate.,2024-02-06T20:38:17
+QE-00035,PO-00456,M040,E073,in-process,fail,dimensional,16,First give value somebody event business quality here woman stand west source fact explain.,2024-05-05T04:24:27
+QE-00036,PO-00040,M044,E091,final,conditional,none,0,Get kind either look dark Mrs usually receive.,2024-04-21T11:52:38
+QE-00037,PO-00176,M035,E095,incoming,fail,dimensional,16,Body scientist dream anything toward difficult do beyond form.,2023-12-19T23:49:17
+QE-00038,PO-00241,M037,E094,final,fail,functional-test-fail,14,Beyond side accept nearly upon imagine various there local current white fly position traditional.,2023-10-02T10:48:13
+QE-00039,PO-00149,M011,E072,final,pass,none,0,,2024-07-18T23:44:05
+QE-00040,PO-00323,M031,E089,in-process,pass,none,0,,2024-03-21T06:53:03
+QE-00041,PO-00150,M048,E090,incoming,fail,dimensional,10,Present discussion school sure also TV individual study.,2024-01-12T20:35:05
+QE-00042,PO-00259,M005,E098,final,fail,dimensional,9,Young however many view while unit theory.,2023-04-14T06:42:05
+QE-00043,PO-00132,M001,E094,incoming,pass,none,0,,2024-04-14T08:02:57
+QE-00044,PO-00303,M048,E075,supplier-audit,fail,surface-finish,12,Fear owner up friend lawyer political modern.,2024-09-19T19:14:31
+QE-00045,PO-00401,M045,E078,supplier-audit,fail,surface-finish,6,Surface life cover both class learn either control say.,2024-09-13T05:22:27
+QE-00046,PO-00017,M022,E073,in-process,fail,functional-test-fail,20,Nothing serious compare task today still middle beautiful protect continue cell.,2024-12-26T17:56:16
+QE-00047,PO-00386,M027,E095,supplier-audit,pass,none,0,,2023-07-05T03:39:42
+QE-00048,PO-00086,M014,E089,final,pass,none,0,,2023-02-12T12:42:21
+QE-00049,PO-00060,M004,E076,supplier-audit,pass,none,0,,2023-11-07T01:08:30
+QE-00050,PO-00244,M048,E095,in-process,fail,coating-failure,13,Very according himself land environment form old of end growth door property.,2024-06-15T05:32:56
+QE-00051,PO-00075,M034,E098,supplier-audit,pass,none,0,,2023-01-10T13:08:35
+QE-00052,PO-00409,M029,E083,final,fail,welding-defect,17,Fill if maybe time region financial brother trouble far pass despite card check security.,2024-06-14T17:44:13
+QE-00053,PO-00273,M041,E082,supplier-audit,pass,none,0,,2024-04-19T12:16:32
+QE-00054,PO-00172,M018,E079,incoming,pass,none,0,,2023-07-18T15:57:20
+QE-00055,PO-00396,M044,E094,in-process,pass,none,0,,2024-07-24T16:35:41
+QE-00056,PO-00267,M022,E092,in-process,pass,none,0,,2023-09-01T15:46:22
+QE-00057,PO-00345,M001,E097,incoming,fail,functional-test-fail,1,Health reduce tree serious soon stay seven quite other skin moment month gun true born stock.,2023-11-16T18:13:57
+QE-00058,PO-00054,M044,E085,final,fail,dimensional,8,Dark Mr clearly take kind quite response major together knowledge argue car indeed nor.,2024-07-17T15:39:07
+QE-00059,PO-00099,M003,E071,incoming,fail,welding-defect,2,Left southern rich how staff second official and general as yes various attorney value all.,2024-12-30T07:00:35
+QE-00060,PO-00112,M039,E091,incoming,pass,none,0,,2024-07-04T07:28:35
+QE-00061,PO-00310,M009,E083,in-process,pass,none,0,,2024-11-27T06:40:51
+QE-00062,PO-00095,M017,E080,supplier-audit,fail,surface-finish,3,Conference career political role white hear through large true help bag who themselves.,2024-05-11T11:43:54
+QE-00063,PO-00142,M050,E084,final,fail,coating-failure,9,President girl condition Mr more road development about age.,2023-05-07T03:15:56
+QE-00064,PO-00032,M025,E083,final,pass,none,0,,2023-02-16T23:34:27
+QE-00065,PO-00417,M017,E076,supplier-audit,fail,material-composition,3,Leg rest interest here discover leave choice country themselves she allow.,2024-01-18T06:21:30
+QE-00066,PO-00202,M012,E091,supplier-audit,pass,none,0,,2023-03-26T13:17:25
+QE-00067,PO-00394,M028,E077,incoming,fail,surface-finish,15,Past view threat drive attack order land public the each analysis keep music.,2024-07-10T00:01:42
+QE-00068,PO-00018,M005,E073,final,fail,material-composition,15,Cell year doctor trouble office officer significant stand.,2023-01-15T21:48:03
+QE-00069,PO-00328,M001,E100,incoming,pass,none,0,,2024-05-31T13:09:02
+QE-00070,PO-00078,M045,E081,supplier-audit,fail,welding-defect,19,Few century produce determine feel article we they treatment personal.,2023-01-04T05:02:34
+QE-00071,PO-00482,M050,E086,supplier-audit,fail,functional-test-fail,14,New another general poor high modern recent impact feel contain Mrs drive different.,2023-11-11T01:28:45
+QE-00072,PO-00403,M005,E088,in-process,pass,none,0,,2023-01-03T21:39:13
+QE-00073,PO-00353,M050,E086,incoming,fail,welding-defect,19,South trip none whose newspaper care drug data position.,2024-02-21T02:47:28
+QE-00074,PO-00350,M020,E083,incoming,pass,none,0,,2024-05-06T10:24:50
+QE-00075,PO-00188,M035,E098,final,pass,none,0,,2023-03-04T19:49:23
+QE-00076,PO-00149,M042,E077,in-process,pass,none,0,,2024-03-07T00:10:19
+QE-00077,PO-00197,M043,E077,final,fail,dimensional,13,Suggest begin right couple environmental purpose owner them could seven right next look thank.,2024-11-27T15:14:19
+QE-00078,PO-00353,M023,E086,incoming,fail,surface-finish,15,Field training deep couple scientist section senior trial receive region however dream.,2024-07-25T11:26:10
+QE-00079,PO-00019,M013,E071,in-process,fail,surface-finish,16,Simply herself move grow end mention market better wonder light style trial.,2023-10-30T07:09:07
+QE-00080,PO-00277,M042,E080,supplier-audit,fail,dimensional,18,Fine animal ten scientist administration network once result far cultural discover now.,2024-10-10T07:33:09
+QE-00081,PO-00009,M003,E081,incoming,conditional,none,0,Material pressure range either start whom politics make collection some.,2023-09-20T15:31:51
+QE-00082,PO-00061,M014,E096,supplier-audit,pass,none,0,,2024-12-31T12:32:37
+QE-00083,PO-00077,M048,E089,in-process,pass,none,0,,2024-12-19T15:48:58
+QE-00084,PO-00377,M010,E086,incoming,fail,dimensional,16,Cause national contain threat wrong whatever model stuff avoid.,2024-12-05T23:02:23
+QE-00085,PO-00360,M042,E075,incoming,pass,none,0,,2023-05-15T02:57:15
+QE-00086,PO-00421,M007,E085,in-process,conditional,none,0,Share include successful discuss religious across media.,2024-10-11T04:05:34
+QE-00087,PO-00055,M008,E086,in-process,pass,none,0,,2023-02-19T08:27:27
+QE-00088,PO-00416,M048,E092,supplier-audit,pass,none,0,,2023-09-10T04:10:38
+QE-00089,PO-00351,M037,E088,in-process,fail,surface-finish,11,Art point value tree process administration mother in admit reveal movie expert.,2024-10-12T00:07:51
+QE-00090,PO-00024,M038,E076,final,pass,none,0,,2023-02-19T10:32:29
+QE-00091,PO-00073,M049,E084,in-process,fail,surface-finish,12,Spend purpose south travel blood benefit chance court money spring environment however health image.,2024-03-06T04:16:04
+QE-00092,PO-00125,M038,E072,in-process,fail,surface-finish,4,During recently feel stock ball yard practice all if help live PM reflect bar suddenly.,2024-09-06T18:17:00
+QE-00093,PO-00399,M011,E071,supplier-audit,pass,none,0,,2023-03-05T00:46:42
+QE-00094,PO-00092,M006,E093,final,fail,dimensional,14,Not teach believe month amount deep test thought little another avoid understand.,2024-06-22T23:50:33
+QE-00095,PO-00355,M009,E077,in-process,pass,none,0,,2024-05-12T07:12:56
+QE-00096,PO-00231,M027,E078,in-process,fail,material-composition,20,Nor allow up fire which onto sell require huge baby class drive strong home to.,2024-06-21T13:43:47
+QE-00097,PO-00093,M046,E086,incoming,fail,dimensional,10,Himself science so ready bad seat generation best discussion away painting pass.,2023-09-28T12:27:37
+QE-00098,PO-00286,M016,E077,incoming,fail,coating-failure,17,However similar ahead event yeah make green wait it quickly produce beat peace something require bank.,2023-03-16T15:40:34
+QE-00099,PO-00277,M033,E078,supplier-audit,pass,none,0,,2024-08-21T16:00:57
+QE-00100,PO-00028,M013,E074,in-process,pass,none,0,,2024-06-16T13:52:09
+QE-00101,PO-00255,M012,E076,incoming,conditional,none,0,Here six child hope guess before wall know seven.,2023-02-12T07:08:51
+QE-00102,PO-00223,M017,E081,supplier-audit,pass,none,0,,2023-02-03T23:29:47
+QE-00103,PO-00027,M035,E076,in-process,fail,surface-finish,1,Car cost large never impact ago government behavior.,2024-01-13T02:11:59
+QE-00104,PO-00037,M016,E094,supplier-audit,fail,functional-test-fail,19,Six tell activity including single right nice yeah drug minute rate college especially environmental certainly cold.,2024-03-26T15:32:34
+QE-00105,PO-00102,M048,E092,final,fail,welding-defect,8,Inside machine baby edge east person order crime blood fight we.,2024-08-28T09:09:06
+QE-00106,PO-00117,M007,E078,supplier-audit,fail,surface-finish,7,Success here television key issue statement prepare organization feel owner receive look.,2023-10-20T00:25:51
+QE-00107,PO-00300,M032,E072,supplier-audit,pass,none,0,,2023-04-23T21:54:04
+QE-00108,PO-00313,M030,E076,supplier-audit,fail,material-composition,12,Who why fact reason make office drug heavy staff.,2023-04-17T06:45:58
+QE-00109,PO-00100,M041,E082,final,fail,coating-failure,7,Half usually customer young conference should agree road wall decide something story attorney.,2023-09-19T05:28:06
+QE-00110,PO-00355,M037,E072,final,fail,surface-finish,5,Pull cause field education child institution help last our old move type thank.,2023-03-28T15:13:36
+QE-00111,PO-00088,M049,E081,in-process,pass,none,0,,2024-11-19T19:51:39
+QE-00112,PO-00081,M041,E090,in-process,fail,welding-defect,19,Myself so growth time Mr point be shoulder price great positive and worker.,2024-03-05T16:06:42
+QE-00113,PO-00439,M034,E086,in-process,pass,none,0,,2024-04-04T19:52:00
+QE-00114,PO-00237,M018,E071,supplier-audit,fail,coating-failure,8,Whom former someone black better develop section newspaper reach determine hear leg quickly.,2023-07-12T19:54:46
+QE-00115,PO-00297,M015,E099,in-process,fail,welding-defect,19,Character young lot far turn beat story role give gas six miss give best.,2024-11-29T00:37:37
+QE-00116,PO-00023,M003,E086,incoming,fail,dimensional,14,Five feel special boy support possible quality clearly worker during company civil nice when.,2024-02-17T20:49:35
+QE-00117,PO-00415,M045,E097,incoming,fail,welding-defect,15,Something picture control price how scene third last involve above.,2024-01-21T00:46:56
+QE-00118,PO-00286,M049,E071,supplier-audit,fail,material-composition,7,Day sell speak artist big the cost for leader energy.,2023-04-14T09:55:51
+QE-00119,PO-00123,M042,E073,incoming,fail,welding-defect,16,Month police others particularly only girl suddenly pay sport relationship father pass be care.,2024-06-03T23:43:39
+QE-00120,PO-00361,M030,E098,incoming,fail,welding-defect,15,Draw bring health center home others offer institution main.,2023-12-27T13:07:29
+QE-00121,PO-00208,M012,E096,final,pass,none,0,,2024-05-02T04:36:11
+QE-00122,PO-00325,M001,E098,incoming,fail,coating-failure,13,Really population yourself never majority cell fire late approach grow act carry spring white measure.,2024-11-25T06:49:30
+QE-00123,PO-00152,M028,E095,final,pass,none,0,,2024-06-26T12:41:16
+QE-00124,PO-00407,M014,E096,incoming,pass,none,0,,2024-04-27T06:07:24
+QE-00125,PO-00029,M033,E100,final,pass,none,0,,2024-11-21T01:06:28
+QE-00126,PO-00197,M024,E085,incoming,fail,dimensional,12,Important man report kitchen cold not somebody determine allow different eye sit not significant.,2023-10-12T22:48:22
+QE-00127,PO-00287,M046,E073,in-process,fail,surface-finish,5,Near both box simple statement happen state among rest national wrong bill stop seem.,2023-09-18T11:32:30
+QE-00128,PO-00059,M042,E086,in-process,fail,material-composition,8,Themselves allow enjoy television beautiful tend bring speech decide scene ready.,2023-09-07T05:52:42
+QE-00129,PO-00137,M033,E092,supplier-audit,fail,welding-defect,9,Plan coach cause deal deal arrive go exactly much food region eye environment teach world quickly.,2023-02-12T15:12:28
+QE-00130,PO-00177,M029,E086,incoming,fail,dimensional,16,Career seek in arrive everyone pretty reduce car.,2024-07-05T16:06:08
+QE-00131,PO-00423,M035,E099,final,fail,functional-test-fail,15,Represent stock seven put majority officer environmental increase later.,2024-04-27T15:22:14
+QE-00132,PO-00345,M045,E096,incoming,fail,welding-defect,7,Idea seek reason theory lawyer maintain old than.,2024-11-24T02:16:51
+QE-00133,PO-00201,M012,E080,incoming,pass,none,0,,2023-03-27T06:42:35
+QE-00134,PO-00058,M045,E075,supplier-audit,fail,surface-finish,5,Room learn professional group as move design involve.,2024-11-10T23:03:15
+QE-00135,PO-00488,M041,E071,final,fail,material-composition,14,Manager follow exist natural candidate system small thus several animal.,2024-06-14T08:55:15
+QE-00136,PO-00068,M031,E082,supplier-audit,fail,functional-test-fail,15,Six least buy tax kid a when dark read car practice city usually ever pressure economy.,2024-07-27T07:53:49
+QE-00137,PO-00033,M002,E098,in-process,pass,none,0,,2024-10-10T20:32:59
+QE-00138,PO-00211,M038,E081,final,pass,none,0,,2024-01-13T22:27:46
+QE-00139,PO-00432,M036,E085,supplier-audit,pass,none,0,,2023-08-25T12:30:20
+QE-00140,PO-00157,M011,E096,final,pass,none,0,,2023-06-26T11:31:18
+QE-00141,PO-00498,M019,E095,incoming,fail,functional-test-fail,5,Professor power appear personal rise sense investment before believe degree back order.,2023-10-02T14:39:02
+QE-00142,PO-00490,M011,E090,in-process,fail,welding-defect,18,Quite act receive stage write institution car audience him room bill finish thing case similar.,2023-08-10T21:22:54
+QE-00143,PO-00090,M046,E093,in-process,fail,surface-finish,6,Political quality attention none particular clearly goal defense security.,2023-07-05T02:52:36
+QE-00144,PO-00163,M037,E075,supplier-audit,fail,surface-finish,9,Pattern kind describe to cause but role goal investment social easy popular easy.,2023-10-15T11:11:17
+QE-00145,PO-00288,M046,E072,final,fail,surface-finish,12,Outside parent single real summer probably feeling military meeting security far approach today west manager both.,2023-04-26T05:52:48
+QE-00146,PO-00277,M011,E088,final,fail,welding-defect,4,Point audience thousand activity guess first hit stuff inside national common likely would authority.,2024-12-16T06:07:58
+QE-00147,PO-00477,M032,E095,in-process,fail,dimensional,15,Attack energy always art smile media pick may indeed reduce bar Mr pattern everyone finally memory.,2024-12-21T23:39:21
+QE-00148,PO-00003,M048,E088,final,fail,welding-defect,10,Window choice force only shake power poor financial join well.,2024-01-04T10:20:06
+QE-00149,PO-00387,M037,E092,in-process,conditional,none,0,Around beat its law participant finally score scientist budget remain.,2024-09-13T09:10:48
+QE-00150,PO-00227,M022,E093,incoming,conditional,none,0,Clearly well mission situation result cold camera.,2024-07-22T14:46:04

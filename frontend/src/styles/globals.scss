@@ -1,0 +1,72 @@
+@use "variables" as *;
+@use "mixins" as *;
+@use "typography" as *;
+
+// ── Root CSS Custom Properties for Light/Dark Theme ─────────────
+:root[data-theme="dark"] {
+  --bg-color: #{$bg-dark};
+  --surface-color: #{$surface-dark};
+  --surface-card: #{$surface-card-dark};
+  --border-color: #{$border-dark};
+
+  --text-primary: #{$text-primary-dark};
+  --text-secondary: #{$text-secondary-dark};
+  --text-muted: #{$text-muted-dark};
+}
+
+:root[data-theme="light"] {
+  --bg-color: #{$bg-light};
+  --surface-color: #{$surface-light};
+  --surface-card: #{$surface-card-light};
+  --border-color: #{$border-light};
+
+  --text-primary: #{$text-primary-light};
+  --text-secondary: #{$text-secondary-light};
+  --text-muted: #{$text-muted-light};
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: 14px;
+}
+
+/* Skeleton Loading Animation */
+.skeleton {
+  background: linear-gradient(90deg, var(--surface-card) 25%, var(--border-color) 50%, var(--surface-card) 75%);
+  background-size: 200% 100%;
+  animation: skeleton-pulse 1.5s infinite ease-in-out;
+  border-radius: $radius-sm;
+}
+
+@keyframes skeleton-pulse {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

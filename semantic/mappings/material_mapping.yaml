@@ -1,0 +1,20 @@
+ontology_concept: "http://enterprise-sce.org/ontology#Material"
+canonical_class: "Material"
+id_field: "materialId"
+
+field_mappings:
+  Material_ID: "materialId"
+  part_number: "materialId"
+  sku: "materialId"
+  material_id: "materialId"
+
+  Material_Name: "name"
+  description: "name"
+  name: "name"
+
+  Category: "category"
+  category: "category"
+
+  Unit_Cost: "unitCost"
+  price: "unitCost"
+  unit_cost: "unitCost"

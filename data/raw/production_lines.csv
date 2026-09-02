@@ -1,0 +1,9 @@
+line_id,name,plant_id,line_type,capacity_per_hour,status
+L001,Assembly Line A,P001,Packaging,108,active
+L002,Assembly Line B,P001,Packaging,61,maintenance
+L003,Paint Line,P001,Assembly,49,maintenance
+L004,Battery Assembly,P002,Battery,71,active
+L005,Quality Control Line,P002,Paint,92,maintenance
+L006,Welding Line,P003,Battery,47,active
+L007,Grinding Line,P003,Welding,102,active
+L008,Packaging Line,P003,Battery,37,active

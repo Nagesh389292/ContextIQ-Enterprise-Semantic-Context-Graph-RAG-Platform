@@ -1,0 +1,34 @@
+ontology_concept: "http://enterprise-sce.org/ontology#Machine"
+canonical_class: "Machine"
+id_field: "machineId"
+
+field_mappings:
+  Machine_ID: "machineId"
+  equipment_code: "machineId"
+  machine_code: "machineId"
+  MACHINE_ID: "machineId"
+  machine_id: "machineId"
+  
+  Machine_Name: "name"
+  equipment_name: "name"
+  name: "name"
+  
+  Machine_Type: "machineType"
+  type: "machineType"
+  machine_type: "machineType"
+  
+  Plant_ID: "plantId"
+  facility_code: "plantId"
+  plant_id: "plantId"
+
+  Line_ID: "lineId"
+  line_code: "lineId"
+  line_id: "lineId"
+
+  Supplier_ID: "supplierId"
+  vendor_id: "supplierId"
+  supplier_id: "supplierId"
+
+  Status: "status"
+  op_status: "status"
+  status: "status"

@@ -1,0 +1,109 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.copilot-page {
+  display: flex; flex-direction: column; gap: $space-5;
+
+  .page-header {
+    @include flex-between;
+    h1 { font-size: 22px; color: var(--text-primary); }
+    .subtitle { color: var(--text-muted); font-size: 13px; margin-top: 2px; }
+
+    .copilot-mode-tag {
+      display: flex; align-items: center; gap: $space-2;
+      background: rgba(59, 130, 246, 0.12); color: $color-primary;
+      border: 1px solid rgba(59, 130, 246, 0.3); padding: 6px 12px; border-radius: $radius-full;
+      font-size: 12px; font-weight: 600;
+    }
+  }
+
+  .chat-window-card {
+    @include card-style;
+    display: flex; flex-direction: column; height: calc(100vh - 200px); padding: 0; overflow: hidden;
+
+    .messages-list {
+      flex: 1; padding: $space-5; overflow-y: auto; @include custom-scrollbar;
+      display: flex; flex-direction: column; gap: $space-4;
+
+      .hero-prompt-state {
+        text-align: center; margin: auto; max-width: 500px;
+        .hero-icon { color: $color-primary; margin-bottom: $space-3; }
+        h2 { font-size: 20px; color: var(--text-primary); }
+        p { font-size: 13px; color: var(--text-muted); margin-top: $space-1; }
+
+        .sample-prompts {
+          display: flex; flex-direction: column; gap: $space-2; margin-top: $space-5;
+          button {
+            background: var(--surface-color); border: 1px solid var(--border-color);
+            padding: $space-3; border-radius: $radius-md; color: var(--text-secondary);
+            font-size: 13px; text-align: left; transition: all 0.15s ease;
+            &:hover { border-color: $color-primary; color: var(--text-primary); }
+          }
+        }
+      }
+
+      .message-row {
+        &.user {
+          display: flex; justify-content: flex-end;
+          .user-bubble { background: $color-primary; color: white; padding: $space-3 $space-4; border-radius: $radius-lg; max-width: 70%; font-size: 14px; }
+        }
+
+        &.assistant {
+          .assistant-card {
+            background: var(--surface-color); border: 1px solid var(--border-color);
+            border-radius: $radius-lg; padding: $space-5; display: flex; flex-direction: column; gap: $space-4;
+
+            .assistant-header {
+              @include flex-between;
+              .bot-icon { color: $color-primary; }
+              .assistant-name { font-weight: 600; font-size: 14px; color: var(--text-primary); margin-left: $space-2; }
+              .grounding-score { font-size: 12px; color: $color-success; font-weight: 600; display: flex; align-items: center; gap: 4px; }
+            }
+
+            .answer-text { font-size: 14px; color: var(--text-primary); line-height: 1.6; }
+
+            .recommendations-box {
+              background: var(--surface-card); border-left: 3px solid $color-primary; padding: $space-3 $space-4; border-radius: $radius-sm;
+              h4 { font-size: 12px; color: $color-primary; text-transform: uppercase; margin-bottom: $space-2; }
+              ul { padding-left: $space-4; font-size: 13px; color: var(--text-secondary); }
+            }
+
+            .evidence-panel {
+              border-top: 1px dashed var(--border-color); padding-top: $space-4; display: flex; flex-direction: column; gap: $space-3;
+              .evidence-header { font-size: 11px; color: var(--text-muted); text-transform: uppercase; }
+
+              .evidence-grid {
+                display: grid; grid-template-columns: 1fr 1fr; gap: $space-3;
+                .evidence-box {
+                  background: var(--surface-card); padding: $space-3; border-radius: $radius-sm; border: 1px solid var(--border-color);
+                  h5 { font-size: 12px; color: var(--text-muted); margin-bottom: $space-2; display: flex; align-items: center; gap: 4px; }
+                  .evidence-item { font-size: 11px; color: var(--text-secondary); margin-bottom: 2px; }
+                }
+              }
+
+              .trace-box {
+                background: var(--surface-card); padding: $space-3; border-radius: $radius-sm; border: 1px solid var(--border-color);
+                h5 { font-size: 12px; color: var(--text-muted); margin-bottom: $space-2; display: flex; align-items: center; gap: 4px; }
+                .trace-list {
+                  display: flex; flex-direction: column; gap: 4px;
+                  .trace-step {
+                    font-size: 11px; display: flex; gap: $space-3;
+                    .timestamp { color: var(--text-muted); }
+                    .stage { color: $color-primary; font-weight: 600; width: 140px; }
+                    .details { color: var(--text-secondary); }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .prompt-form {
+      display: flex; padding: $space-3 $space-4; border-top: 1px solid var(--border-color); background: var(--surface-color); gap: $space-3;
+      input { flex: 1; border: 1px solid var(--border-color); background: var(--surface-card); border-radius: $radius-md; padding: $space-3; color: var(--text-primary); outline: none; }
+      .send-btn { background: $color-primary; color: white; padding: 0 $space-4; border-radius: $radius-md; font-weight: 600; }
+    }
+  }
+}

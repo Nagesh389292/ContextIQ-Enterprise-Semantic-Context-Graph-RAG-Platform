@@ -1,0 +1,116 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.app-sidebar {
+  width: 260px;
+  background-color: var(--surface-color);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 50;
+
+  .sidebar-brand {
+    padding: $space-4 $space-5;
+    border-bottom: 1px solid var(--border-color);
+    @include flex-between;
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: $space-2;
+
+      .logo-hex {
+        width: 28px;
+        height: 28px;
+        background: $color-primary;
+        color: white;
+        border-radius: $radius-sm;
+        @include flex-center;
+        font-weight: 700;
+        font-size: 14px;
+      }
+
+      .brand-name {
+        font-weight: 700;
+        font-size: 18px;
+        color: var(--text-primary);
+        letter-spacing: -0.02em;
+      }
+    }
+
+    .brand-tag {
+      font-size: 10px;
+      padding: 2px 6px;
+      background: var(--surface-card);
+      color: var(--text-muted);
+      border-radius: $radius-full;
+      border: 1px solid var(--border-color);
+    }
+  }
+
+  .sidebar-nav {
+    flex: 1;
+    padding: $space-4 $space-3;
+    overflow-y: auto;
+    @include custom-scrollbar;
+
+    .nav-section-label {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      padding: $space-2 $space-3;
+      margin-bottom: $space-1;
+    }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      gap: $space-3;
+      padding: $space-2 $space-3;
+      border-radius: $radius-md;
+      color: var(--text-secondary);
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 2px;
+      transition: all 0.15s ease;
+
+      .nav-icon {
+        color: var(--text-muted);
+        transition: color 0.15s ease;
+      }
+
+      .nav-badge {
+        margin-left: auto;
+        font-size: 10px;
+        font-weight: 600;
+        background: rgba(59, 130, 246, 0.15);
+        color: $color-primary;
+        padding: 1px 6px;
+        border-radius: $radius-full;
+      }
+
+      &:hover {
+        background-color: var(--surface-card);
+        color: var(--text-primary);
+        .nav-icon { color: var(--text-primary); }
+      }
+
+      &.active {
+        background-color: $color-primary;
+        color: #ffffff;
+        .nav-icon { color: #ffffff; }
+        .nav-badge { background: rgba(255, 255, 255, 0.2); color: #ffffff; }
+      }
+    }
+  }
+
+  .sidebar-footer {
+    padding: $space-3;
+    border-top: 1px solid var(--border-color);
+  }
+}

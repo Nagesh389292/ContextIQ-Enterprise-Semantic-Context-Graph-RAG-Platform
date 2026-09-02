@@ -1,0 +1,98 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.kg-explorer-page {
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+  height: calc(100vh - 100px);
+
+  .page-header {
+    @include flex-between;
+    h1 { font-size: 22px; color: var(--text-primary); }
+    .subtitle { color: var(--text-muted); font-size: 13px; margin-top: 2px; }
+
+    .graph-stats-badge {
+      font-size: 12px; color: var(--text-secondary); background: var(--surface-card);
+      border: 1px solid var(--border-color); padding: 6px 12px; border-radius: $radius-full;
+      .dot { margin: 0 4px; color: var(--text-muted); }
+    }
+  }
+
+  .graph-content-wrapper {
+    display: flex;
+    flex: 1;
+    gap: $space-4;
+    position: relative;
+    overflow: hidden;
+    border-radius: $radius-md;
+    border: 1px solid var(--border-color);
+
+    .graph-canvas-container {
+      flex: 1;
+      height: 100%;
+      background-color: var(--surface-color);
+    }
+
+    .node-inspector {
+      width: 320px;
+      background: var(--surface-card);
+      border-left: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+
+      .inspector-header {
+        @include flex-between;
+        padding: $space-3 $space-4;
+        border-bottom: 1px solid var(--border-color);
+
+        .title-group {
+          display: flex; align-items: center; gap: $space-2;
+          font-weight: 600; font-size: 14px; color: var(--text-primary);
+          .info-icon { color: $color-primary; }
+        }
+
+        .close-btn { color: var(--text-muted); &:hover { color: var(--text-primary); } }
+      }
+
+      .inspector-body {
+        padding: $space-4;
+        display: flex;
+        flex-direction: column;
+        gap: $space-4;
+        overflow-y: auto;
+        @include custom-scrollbar;
+
+        .entity-main {
+          h2 { font-size: 18px; color: var(--text-primary); }
+          .entity-id { font-size: 12px; color: var(--text-muted); }
+        }
+
+        .props-section, .relationships-section {
+          h3 { font-size: 13px; color: var(--text-muted); text-transform: uppercase; margin-bottom: $space-2; letter-spacing: 0.05em; }
+
+          .prop-row {
+            @include flex-between;
+            font-size: 12px;
+            padding: 6px 0;
+            border-bottom: 1px solid var(--border-color);
+            .prop-name { color: var(--text-muted); }
+            .prop-val { color: var(--text-primary); font-weight: 500; }
+            .status-op { color: $color-success; font-weight: 600; }
+          }
+
+          .rel-card {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: $radius-sm;
+            padding: $space-2 $space-3;
+            margin-bottom: $space-2;
+            display: flex; flex-direction: column; gap: 2px;
+            .rel-type { font-size: 11px; font-weight: 700; color: $color-primary; }
+            .rel-target { font-size: 12px; color: var(--text-secondary); }
+          }
+        }
+      }
+    }
+  }
+}

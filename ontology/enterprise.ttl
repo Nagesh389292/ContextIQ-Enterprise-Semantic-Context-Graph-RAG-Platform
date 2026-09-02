@@ -1,0 +1,196 @@
+@prefix : <http://enterprise-sce.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://enterprise-sce.org/ontology> a owl:Ontology ;
+    rdfs:comment "ContextIQ Manufacturing & Enterprise Operations Ontology" ;
+    rdfs:label "ContextIQ Enterprise Manufacturing Ontology" ;
+    owl:versionInfo "1.0.0" .
+
+# =================================================================
+# Classes
+# =================================================================
+
+:EnterpriseResource a owl:Class ;
+    rdfs:label "Enterprise Resource" ;
+    rdfs:comment "Top-level abstraction for all assets, entities, and processes in ContextIQ." .
+
+:EnterpriseAsset a owl:Class ;
+    rdfs:subClassOf :EnterpriseResource ;
+    rdfs:label "Enterprise Asset" ;
+    rdfs:comment "Physical equipment, plants, lines, or components owned/operated by the enterprise." .
+
+:Plant a owl:Class ;
+    rdfs:subClassOf :EnterpriseAsset ;
+    rdfs:label "Plant" ;
+    rdfs:comment "Manufacturing plant or facility." .
+
+:ProductionLine a owl:Class ;
+    rdfs:subClassOf :EnterpriseAsset ;
+    rdfs:label "Production Line" ;
+    rdfs:comment "An assembly, paint, battery, or welding line within a plant." .
+
+:Machine a owl:Class ;
+    rdfs:subClassOf :EnterpriseAsset ;
+    rdfs:label "Machine" ;
+    rdfs:comment "A industrial machine unit (CNC, Robot Arm, Conveyor, Press)." .
+
+:Sensor a owl:Class ;
+    rdfs:subClassOf :EnterpriseAsset ;
+    rdfs:label "Sensor" ;
+    rdfs:comment "IoT sensor attached to a machine (temperature, vibration, pressure)." .
+
+:Material a owl:Class ;
+    rdfs:subClassOf :EnterpriseResource ;
+    rdfs:label "Material" ;
+    rdfs:comment "Raw materials, parts, or components (Bearing, Motor, Fluid)." .
+
+:Supplier a owl:Class ;
+    rdfs:subClassOf :EnterpriseResource ;
+    rdfs:label "Supplier" ;
+    rdfs:comment "Third-party vendor providing equipment or materials." .
+
+:Employee a owl:Class ;
+    rdfs:subClassOf :EnterpriseResource ;
+    rdfs:label "Employee" ;
+    rdfs:comment "Enterprise workforce (Operator, Maintenance Engineer, Quality Engineer)." .
+
+:BusinessActivity a owl:Class ;
+    rdfs:subClassOf :EnterpriseResource ;
+    rdfs:label "Business Activity" ;
+    rdfs:comment "Operational events, orders, or procedures." .
+
+:ProductionOrder a owl:Class ;
+    rdfs:subClassOf :BusinessActivity ;
+    rdfs:label "Production Order" ;
+    rdfs:comment "A planned or active manufacturing order for a product batch." .
+
+:MaintenanceEvent a owl:Class ;
+    rdfs:subClassOf :BusinessActivity ;
+    rdfs:label "Maintenance Event" ;
+    rdfs:comment "Preventive, corrective, or emergency maintenance action." .
+
+:QualityEvent a owl:Class ;
+    rdfs:subClassOf :BusinessActivity ;
+    rdfs:label "Quality Event" ;
+    rdfs:comment "Quality inspection log or defect report." .
+
+:Document a owl:Class ;
+    rdfs:subClassOf :EnterpriseResource ;
+    rdfs:label "Document" ;
+    rdfs:comment "Unstructured enterprise manual, SOP, or specification." .
+
+:BusinessProcess a owl:Class ;
+    rdfs:subClassOf :EnterpriseResource ;
+    rdfs:label "Business Process" ;
+    rdfs:comment "High-level enterprise process (Plan-to-Produce, Maintenance, Procure-to-Pay)." .
+
+# =================================================================
+# Object Properties (Relationships)
+# =================================================================
+
+:locatedAt a owl:ObjectProperty ;
+    rdfs:label "located at" ;
+    rdfs:domain :ProductionLine ;
+    rdfs:range :Plant .
+
+:installedAt a owl:ObjectProperty ;
+    rdfs:label "installed at" ;
+    rdfs:domain :Machine ;
+    rdfs:range :Plant .
+
+:onLine a owl:ObjectProperty ;
+    rdfs:label "on production line" ;
+    rdfs:domain :Machine ;
+    rdfs:range :ProductionLine .
+
+:hasSensor a owl:ObjectProperty ;
+    rdfs:label "has sensor" ;
+    rdfs:domain :Machine ;
+    rdfs:range :Sensor ;
+    owl:inverseOf :attachedToMachine .
+
+:attachedToMachine a owl:ObjectProperty ;
+    rdfs:label "attached to machine" ;
+    rdfs:domain :Sensor ;
+    rdfs:range :Machine .
+
+:suppliedBy a owl:ObjectProperty ;
+    rdfs:label "supplied by" ;
+    rdfs:domain :Machine ;
+    rdfs:range :Supplier .
+
+:suppliesMaterial a owl:ObjectProperty ;
+    rdfs:label "supplies material" ;
+    rdfs:domain :Supplier ;
+    rdfs:range :Material .
+
+:assignedToPlant a owl:ObjectProperty ;
+    rdfs:label "assigned to plant" ;
+    rdfs:domain :Employee ;
+    rdfs:range :Plant .
+
+:maintainsMachine a owl:ObjectProperty ;
+    rdfs:label "maintains machine" ;
+    rdfs:domain :MaintenanceEvent ;
+    rdfs:range :Machine .
+
+:performedBy a owl:ObjectProperty ;
+    rdfs:label "performed by technician" ;
+    rdfs:domain :MaintenanceEvent ;
+    rdfs:range :Employee .
+
+:inspectsOrder a owl:ObjectProperty ;
+    rdfs:label "inspects production order" ;
+    rdfs:domain :QualityEvent ;
+    rdfs:range :ProductionOrder .
+
+:relatesToMachine a owl:ObjectProperty ;
+    rdfs:label "relates to machine" ;
+    rdfs:domain :QualityEvent ;
+    rdfs:range :Machine .
+
+:documentsMachine a owl:ObjectProperty ;
+    rdfs:label "documents machine type" ;
+    rdfs:domain :Document ;
+    rdfs:range :Machine .
+
+:supportsProcess a owl:ObjectProperty ;
+    rdfs:label "supports process" ;
+    rdfs:domain :Document ;
+    rdfs:range :BusinessProcess .
+
+# =================================================================
+# Datatype Properties (Attributes)
+# =================================================================
+
+:machineId a owl:DatatypeProperty ;
+    rdfs:domain :Machine ;
+    rdfs:range xsd:string .
+
+:machineType a owl:DatatypeProperty ;
+    rdfs:domain :Machine ;
+    rdfs:range xsd:string .
+
+:status a owl:DatatypeProperty ;
+    rdfs:domain :EnterpriseResource ;
+    rdfs:range xsd:string .
+
+:minThreshold a owl:DatatypeProperty ;
+    rdfs:domain :Sensor ;
+    rdfs:range xsd:decimal .
+
+:maxThreshold a owl:DatatypeProperty ;
+    rdfs:domain :Sensor ;
+    rdfs:range xsd:decimal .
+
+:supplierRating a owl:DatatypeProperty ;
+    rdfs:domain :Supplier ;
+    rdfs:range xsd:decimal .
+
+:supplierTier a owl:DatatypeProperty ;
+    rdfs:domain :Supplier ;
+    rdfs:range xsd:integer .

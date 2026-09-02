@@ -1,0 +1,96 @@
+@prefix : <http://enterprise-sce.org/ontology#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# =================================================================
+# Machine SHACL Shape
+# =================================================================
+
+:MachineShape a sh:NodeShape ;
+    sh:targetClass :Machine ;
+    rdfs:label "Machine Validation Shape" ;
+    rdfs:comment "Enforces enterprise constraints on Machine entities." ;
+    
+    sh:property [
+        sh:path :machineId ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:pattern "^M\\d{3}$" ;
+        sh:message "Machine ID must follow format M001-M999" ;
+    ] ;
+
+    sh:property [
+        sh:path :status ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:in ("operational" "maintenance" "fault" "idle") ;
+        sh:message "Machine status must be one of: operational, maintenance, fault, idle" ;
+    ] ;
+
+    sh:property [
+        sh:path :installedAt ;
+        sh:class :Plant ;
+        sh:minCount 1 ;
+        sh:message "Machine must be assigned to exactly 1 Plant" ;
+    ] ;
+
+    sh:property [
+        sh:path :hasSensor ;
+        sh:class :Sensor ;
+        sh:minCount 1 ;
+        sh:message "Machine must have at least 1 attached Sensor" ;
+    ] .
+
+# =================================================================
+# Sensor SHACL Shape
+# =================================================================
+
+:SensorShape a sh:NodeShape ;
+    sh:targetClass :Sensor ;
+    rdfs:label "Sensor Validation Shape" ;
+    
+    sh:property [
+        sh:path :minThreshold ;
+        sh:datatype xsd:decimal ;
+        sh:maxCount 1 ;
+        sh:message "Sensor minThreshold must be a decimal" ;
+    ] ;
+
+    sh:property [
+        sh:path :maxThreshold ;
+        sh:datatype xsd:decimal ;
+        sh:maxCount 1 ;
+        sh:message "Sensor maxThreshold must be a decimal" ;
+    ] ;
+
+    sh:property [
+        sh:path :status ;
+        sh:in ("active" "faulty" "calibrating") ;
+        sh:message "Sensor status must be active, faulty, or calibrating" ;
+    ] .
+
+# =================================================================
+# Supplier SHACL Shape
+# =================================================================
+
+:SupplierShape a sh:NodeShape ;
+    sh:targetClass :Supplier ;
+    rdfs:label "Supplier Validation Shape" ;
+
+    sh:property [
+        sh:path :supplierTier ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 1 ;
+        sh:maxInclusive 3 ;
+        sh:message "Supplier tier must be between 1 and 3" ;
+    ] ;
+
+    sh:property [
+        sh:path :supplierRating ;
+        sh:datatype xsd:decimal ;
+        sh:minInclusive 0.0 ;
+        sh:maxInclusive 5.0 ;
+        sh:message "Supplier rating must be between 0.0 and 5.0" ;
+    ] .

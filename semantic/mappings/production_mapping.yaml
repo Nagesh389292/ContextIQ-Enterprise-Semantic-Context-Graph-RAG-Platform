@@ -1,0 +1,20 @@
+ontology_concept: "http://enterprise-sce.org/ontology#ProductionOrder"
+canonical_class: "ProductionOrder"
+id_field: "orderId"
+
+field_mappings:
+  Order_ID: "orderId"
+  PO_NUM: "orderId"
+  order_id: "orderId"
+
+  Product_Name: "productName"
+  product: "productName"
+  product_name: "productName"
+
+  Quantity: "quantity"
+  batch_size: "quantity"
+  quantity: "quantity"
+
+  Status: "status"
+  order_status: "status"
+  status: "status"

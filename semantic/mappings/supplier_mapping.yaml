@@ -1,0 +1,23 @@
+ontology_concept: "http://enterprise-sce.org/ontology#Supplier"
+canonical_class: "Supplier"
+id_field: "supplierId"
+
+field_mappings:
+  Supplier_ID: "supplierId"
+  VEND_NUM: "supplierId"
+  vendor_code: "supplierId"
+  supplier_id: "supplierId"
+
+  Supplier_Name: "name"
+  vendor_name: "name"
+  company_name: "name"
+  name: "name"
+
+  Country: "country"
+  country: "country"
+
+  Rating: "rating"
+  rating: "rating"
+
+  Tier: "tier"
+  tier: "tier"

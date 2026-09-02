@@ -1,0 +1,121 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.dashboard-page {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+
+  .page-header {
+    @include flex-between;
+
+    h1 {
+      font-size: 22px;
+      color: var(--text-primary);
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 13px;
+      margin-top: 2px;
+    }
+
+    .header-badge {
+      display: flex;
+      align-items: center;
+      gap: $space-2;
+      background: var(--surface-card);
+      border: 1px solid var(--border-color);
+      padding: $space-2 $space-3;
+      border-radius: $radius-full;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-secondary);
+
+      .live-dot {
+        width: 8px;
+        height: 8px;
+        background-color: $color-success;
+        border-radius: $radius-full;
+      }
+    }
+  }
+
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $space-4;
+
+    .kpi-card {
+      @include card-style;
+
+      .kpi-header {
+        @include flex-between;
+        .kpi-title { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+        .kpi-icon { color: $color-primary; }
+      }
+
+      .kpi-value {
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin: $space-2 0;
+      }
+
+      .kpi-footer {
+        font-size: 11px;
+        color: var(--text-muted);
+      }
+    }
+  }
+
+  .metrics-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: $space-4;
+
+    .chart-card, .summary-card {
+      @include card-style;
+
+      h3 { font-size: 16px; margin-bottom: 4px; }
+      .card-sub { font-size: 12px; color: var(--text-muted); margin-bottom: $space-4; }
+
+      .gauges-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: $space-3;
+        padding-top: $space-2;
+
+        .gauge-item {
+          background: var(--surface-color);
+          border: 1px solid var(--border-color);
+          border-radius: $radius-md;
+          padding: $space-4;
+          text-align: center;
+
+          .gauge-score { font-size: 26px; font-weight: 700; }
+          .gauge-label { font-size: 11px; color: var(--text-muted); margin-top: $space-1; }
+        }
+      }
+
+      .summary-list {
+        display: flex;
+        flex-direction: column;
+        gap: $space-4;
+
+        .summary-item {
+          display: flex;
+          gap: $space-3;
+          align-items: flex-start;
+
+          .status-icon {
+            &.success { color: $color-success; }
+            &.warning { color: $color-warning; }
+          }
+
+          .item-title { font-weight: 600; font-size: 13px; color: var(--text-primary); }
+          .item-sub { font-size: 12px; color: var(--text-muted); }
+        }
+      }
+    }
+  }
+}

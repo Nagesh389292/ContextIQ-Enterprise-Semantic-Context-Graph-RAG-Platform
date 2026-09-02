@@ -1,0 +1,123 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.app-topbar {
+  height: 60px;
+  background-color: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 $space-6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 260px;
+  z-index: 40;
+
+  .topbar-search {
+    display: flex;
+    align-items: center;
+    gap: $space-2;
+    background-color: var(--surface-card);
+    border: 1px solid var(--border-color);
+    border-radius: $radius-md;
+    padding: $space-2 $space-3;
+    width: 420px;
+
+    .search-icon {
+      color: var(--text-muted);
+    }
+
+    input {
+      border: none;
+      background: transparent;
+      outline: none;
+      color: var(--text-primary);
+      width: 100%;
+
+      &::placeholder {
+        color: var(--text-muted);
+      }
+    }
+
+    .kbd-shortcut {
+      font-size: 11px;
+      color: var(--text-muted);
+      background: var(--surface-color);
+      border: 1px solid var(--border-color);
+      padding: 2px 6px;
+      border-radius: $radius-sm;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      white-space: nowrap;
+    }
+  }
+
+  .topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: $space-4;
+
+    .icon-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: $radius-md;
+      border: 1px solid var(--border-color);
+      background: var(--surface-card);
+      color: var(--text-secondary);
+      @include flex-center;
+      position: relative;
+      transition: all 0.15s ease;
+
+      &:hover {
+        color: var(--text-primary);
+        border-color: $color-primary;
+      }
+
+      .notification-dot {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        width: 8px;
+        height: 8px;
+        background-color: $color-primary;
+        border-radius: $radius-full;
+      }
+    }
+
+    .user-profile {
+      display: flex;
+      align-items: center;
+      gap: $space-3;
+      padding-left: $space-3;
+      border-left: 1px solid var(--border-color);
+
+      .avatar {
+        width: 34px;
+        height: 34px;
+        border-radius: $radius-full;
+        background: $color-primary;
+        color: white;
+        @include flex-center;
+      }
+
+      .user-info {
+        display: flex;
+        flex-direction: column;
+
+        .user-name {
+          font-weight: 600;
+          font-size: 13px;
+          color: var(--text-primary);
+        }
+
+        .user-role {
+          font-size: 11px;
+          color: var(--text-muted);
+        }
+      }
+    }
+  }
+}

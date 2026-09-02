@@ -1,0 +1,69 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.documents-page {
+  display: flex; flex-direction: column; gap: $space-5;
+
+  .page-header {
+    @include flex-between;
+    h1 { font-size: 22px; color: var(--text-primary); }
+    .subtitle { color: var(--text-muted); font-size: 13px; margin-top: 2px; }
+
+    .upload-btn {
+      display: flex; align-items: center; gap: $space-2;
+      background: $color-primary; color: white;
+      padding: $space-2 $space-4; border-radius: $radius-md;
+      font-weight: 600; font-size: 13px;
+      &:hover { background: $color-primary-hover; }
+    }
+  }
+
+  .docs-layout {
+    display: grid; grid-template-columns: 1fr 340px; gap: $space-4;
+
+    .docs-table-card {
+      @include card-style; padding: 0; overflow: hidden;
+
+      .table-header { padding: $space-3 $space-4; border-bottom: 1px solid var(--border-color); font-size: 12px; color: var(--text-muted); }
+
+      .docs-table {
+        width: 100%; border-collapse: collapse; text-align: left;
+        th { font-size: 11px; text-transform: uppercase; color: var(--text-muted); padding: $space-3 $space-4; border-bottom: 1px solid var(--border-color); }
+        td { font-size: 13px; color: var(--text-primary); padding: $space-3 $space-4; border-bottom: 1px solid var(--border-color); }
+
+        tr {
+          cursor: pointer; transition: background 0.15s ease;
+          &:hover { background: var(--surface-color); }
+          &.active { background: rgba(59, 130, 246, 0.12); }
+        }
+
+        .doc-title-cell {
+          display: flex; align-items: center; gap: $space-2; font-weight: 600;
+          .doc-icon { color: $color-primary; }
+        }
+
+        .type-badge { font-size: 11px; padding: 2px 8px; border-radius: $radius-sm; background: var(--surface-color); border: 1px solid var(--border-color); }
+        .status-badge { display: flex; align-items: center; gap: 4px; font-size: 11px; color: $color-success; font-weight: 600; }
+      }
+    }
+
+    .doc-detail-drawer {
+      @include card-style; display: flex; flex-direction: column; gap: $space-4;
+
+      .drawer-header {
+        h2 { font-size: 18px; color: var(--text-primary); }
+        .doc-id { font-size: 12px; color: var(--text-muted); }
+      }
+
+      .drawer-section {
+        h3 { font-size: 12px; color: var(--text-muted); text-transform: uppercase; margin-bottom: $space-2; }
+        .meta-row { @include flex-between; font-size: 12px; padding: 6px 0; border-bottom: 1px solid var(--border-color); }
+
+        .chips-list {
+          display: flex; flex-wrap: wrap; gap: $space-2; margin-top: $space-2;
+          .chip { display: flex; align-items: center; gap: 4px; font-size: 11px; background: var(--surface-color); border: 1px solid var(--border-color); padding: 4px 8px; border-radius: $radius-sm; color: var(--text-secondary); }
+        }
+      }
+    }
+  }
+}

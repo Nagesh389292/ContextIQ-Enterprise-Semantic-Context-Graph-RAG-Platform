@@ -1,0 +1,12 @@
+# List all ontology classes with labels and subclass relationships
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?class ?label ?comment ?superClass
+WHERE {
+    ?class a owl:Class .
+    OPTIONAL { ?class rdfs:label ?label }
+    OPTIONAL { ?class rdfs:comment ?comment }
+    OPTIONAL { ?class rdfs:subClassOf ?superClass }
+}
+ORDER BY ?label

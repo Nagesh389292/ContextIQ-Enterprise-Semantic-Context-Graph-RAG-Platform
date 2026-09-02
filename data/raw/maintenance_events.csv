@@ -1,0 +1,201 @@
+event_id,machine_id,event_type,description,technician_id,start_time,end_time,duration_hours,root_cause,parts_replaced,cost
+ME-00001,M005,corrective,Seal leak detected on M005,E025,2023-06-27T01:37:19,2023-06-27T12:36:07,10.98,Software fault,Motor brushes,6185.83
+ME-00002,M021,preventive,Bearing wear detected on M021,E042,2024-06-07T05:11:53,2024-06-07T07:03:29,1.86,Operator error,Bearing assembly,11388.22
+ME-00003,M038,preventive,Scheduled PM detected on M038,E007,2024-10-21T02:32:57,2024-10-21T03:52:45,1.33,Sensor drift,Seal kit,10351.0
+ME-00004,M039,preventive,Seal leak detected on M039,E026,2024-08-17T15:44:44,2024-08-18T02:54:20,11.16,Bearing wear,Belt replacement,2513.59
+ME-00005,M015,preventive,Scheduled PM detected on M015,E019,2023-10-31T22:37:46,2023-11-01T08:17:22,9.66,Overheating,Sensor replacement,10223.88
+ME-00006,M047,corrective,Scheduled PM detected on M047,E010,2023-01-09T21:51:17,2023-01-10T04:43:29,6.87,Lubrication failure,Bearing assembly,274.44
+ME-00007,M039,preventive,Sensor drift detected on M039,E014,2024-03-01T12:36:50,2024-03-02T00:00:14,11.39,Vibration misalignment,Lubricant replenishment,6307.29
+ME-00008,M042,emergency,Electrical fault detected on M042,E040,2023-04-21T21:33:21,2023-04-21T23:54:21,2.35,Sensor drift,Lubricant replenishment,1896.41
+ME-00009,M043,corrective,Scheduled PM detected on M043,E030,2024-10-24T05:06:45,2024-10-24T06:14:33,1.13,Scheduled PM,Bearing assembly,4501.66
+ME-00010,M005,preventive,Software fault detected on M005,E022,2023-06-03T14:07:50,2023-06-03T22:58:14,8.84,Vibration misalignment,Lubricant replenishment,10135.17
+ME-00011,M016,preventive,Electrical fault detected on M016,E021,2024-04-26T10:36:40,2024-04-26T11:54:40,1.3,Software fault,Belt replacement,5059.52
+ME-00012,M043,preventive,Operator error detected on M043,E024,2024-03-29T23:43:00,2024-03-30T01:58:00,2.25,Vibration misalignment,Belt replacement,2695.86
+ME-00013,M021,preventive,Seal leak detected on M021,E018,2023-06-22T07:32:18,2023-06-22T16:13:42,8.69,Vibration misalignment,Lubricant replenishment,10257.79
+ME-00014,M022,emergency,Sensor drift detected on M022,E032,2023-12-26T18:07:08,2023-12-26T23:44:20,5.62,Scheduled PM,Bearing assembly,2801.4
+ME-00015,M039,preventive,Overheating detected on M039,E035,2023-08-07T05:03:36,2023-08-07T15:26:24,10.38,Electrical fault,Sensor replacement,11056.46
+ME-00016,M041,preventive,Scheduled PM detected on M041,E041,2023-02-28T19:33:25,2023-03-01T06:19:01,10.76,Bearing wear,Seal kit,8811.98
+ME-00017,M026,corrective,Scheduled PM detected on M026,E017,2023-06-15T12:08:47,2023-06-15T23:03:59,10.92,Scheduled PM,Filter replacement,7187.14
+ME-00018,M050,preventive,Operator error detected on M050,E047,2023-11-02T02:41:58,2023-11-02T05:46:10,3.07,Sensor drift,Lubricant replenishment,7077.58
+ME-00019,M033,preventive,Electrical fault detected on M033,E040,2023-10-10T20:56:44,2023-10-11T03:12:56,6.27,Overheating,Seal kit,7809.22
+ME-00020,M029,preventive,Overheating detected on M029,E048,2024-03-16T03:39:51,2024-03-16T15:04:27,11.41,Software fault,Sensor replacement,798.21
+ME-00021,M049,preventive,Electrical fault detected on M049,E003,2023-02-19T01:49:01,2023-02-19T05:21:25,3.54,Electrical fault,Filter replacement,13634.35
+ME-00022,M024,preventive,Bearing wear detected on M024,E003,2024-12-14T04:55:56,2024-12-14T10:39:44,5.73,Vibration misalignment,Bearing assembly,10615.3
+ME-00023,M034,corrective,Sensor drift detected on M034,E038,2023-08-01T16:19:19,2023-08-02T02:25:19,10.1,Scheduled PM,Filter replacement,2772.98
+ME-00024,M042,preventive,Lubrication failure detected on M042,E034,2024-04-01T17:07:38,2024-04-02T01:08:14,8.01,Sensor drift,Belt replacement,14595.58
+ME-00025,M015,corrective,Vibration misalignment detected on M015,E032,2023-10-02T08:29:44,2023-10-02T18:23:44,9.9,Software fault,Filter replacement,297.65
+ME-00026,M009,preventive,Sensor drift detected on M009,E014,2023-06-28T21:20:19,2023-06-28T22:43:43,1.39,Overheating,Lubricant replenishment,2528.89
+ME-00027,M039,corrective,Seal leak detected on M039,E022,2023-04-03T03:50:06,2023-04-03T11:56:06,8.1,Lubrication failure,Belt replacement,10193.4
+ME-00028,M031,preventive,Seal leak detected on M031,E002,2023-05-06T11:50:53,2023-05-06T19:47:17,7.94,Electrical fault,Bearing assembly,2092.7
+ME-00029,M038,preventive,Operator error detected on M038,E010,2024-05-04T05:29:02,2024-05-04T11:53:02,6.4,Bearing wear,Lubricant replenishment,4022.24
+ME-00030,M012,corrective,Operator error detected on M012,E041,2023-11-12T04:15:12,2023-11-12T11:38:36,7.39,Bearing wear,Motor brushes,10974.02
+ME-00031,M019,emergency,Software fault detected on M019,E031,2023-06-18T11:35:38,2023-06-18T17:15:50,5.67,Overheating,Lubricant replenishment,12489.38
+ME-00032,M039,preventive,Overheating detected on M039,E040,2024-03-28T19:18:40,2024-03-29T05:15:04,9.94,Scheduled PM,Sensor replacement,2682.28
+ME-00033,M044,preventive,Lubrication failure detected on M044,E015,2023-12-19T11:17:46,2023-12-19T18:39:22,7.36,Seal leak,Belt replacement,2156.76
+ME-00034,M002,preventive,Seal leak detected on M002,E010,2024-10-29T21:57:01,2024-10-30T08:54:37,10.96,Operator error,Bearing assembly,2825.85
+ME-00035,M040,corrective,Scheduled PM detected on M040,E049,2024-11-13T00:29:42,2024-11-13T10:00:18,9.51,Lubrication failure,Bearing assembly,7337.17
+ME-00036,M009,emergency,Seal leak detected on M009,E034,2024-02-24T03:01:09,2024-02-24T13:02:21,10.02,Seal leak,Sensor replacement,13147.4
+ME-00037,M045,corrective,Software fault detected on M045,E050,2023-06-28T11:56:01,2023-06-28T23:13:25,11.29,Seal leak,Sensor replacement,8917.91
+ME-00038,M048,emergency,Lubrication failure detected on M048,E028,2024-10-12T12:21:44,2024-10-12T20:52:20,8.51,Overheating,Sensor replacement,7261.69
+ME-00039,M015,emergency,Scheduled PM detected on M015,E027,2023-03-07T08:28:22,2023-03-07T12:13:58,3.76,Sensor drift,Lubricant replenishment,280.95
+ME-00040,M048,corrective,Scheduled PM detected on M048,E001,2024-03-25T04:27:40,2024-03-25T10:58:16,6.51,Seal leak,Motor brushes,3240.2
+ME-00041,M021,preventive,Operator error detected on M021,E017,2023-03-25T00:51:18,2023-03-25T03:08:06,2.28,Sensor drift,Seal kit,8134.35
+ME-00042,M037,preventive,Seal leak detected on M037,E049,2023-08-03T06:49:14,2023-08-03T18:43:50,11.91,Electrical fault,Belt replacement,8371.15
+ME-00043,M036,preventive,Software fault detected on M036,E017,2023-10-15T19:16:11,2023-10-16T02:11:59,6.93,Sensor drift,Filter replacement,5296.47
+ME-00044,M046,preventive,Lubrication failure detected on M046,E048,2023-04-18T11:47:01,2023-04-18T22:06:49,10.33,Electrical fault,Belt replacement,11790.02
+ME-00045,M011,preventive,Vibration misalignment detected on M011,E036,2024-01-31T02:12:37,2024-01-31T07:19:13,5.11,Operator error,Motor brushes,10331.55
+ME-00046,M004,preventive,Lubrication failure detected on M004,E010,2024-05-09T03:35:57,2024-05-09T04:09:33,0.56,Software fault,Filter replacement,6643.59
+ME-00047,M005,preventive,Bearing wear detected on M005,E047,2023-10-16T06:52:04,2023-10-16T08:17:16,1.42,Seal leak,Belt replacement,9286.69
+ME-00048,M034,preventive,Overheating detected on M034,E041,2024-04-09T07:41:45,2024-04-09T08:51:21,1.16,Software fault,Belt replacement,358.51
+ME-00049,M043,emergency,Bearing wear detected on M043,E039,2024-02-07T17:04:38,2024-02-07T20:52:02,3.79,Scheduled PM,Filter replacement,10537.06
+ME-00050,M040,preventive,Bearing wear detected on M040,E011,2023-01-29T06:13:41,2023-01-29T10:52:05,4.64,Lubrication failure,Sensor replacement,11739.16
+ME-00051,M023,corrective,Scheduled PM detected on M023,E001,2023-11-12T04:09:13,2023-11-12T11:23:37,7.24,Lubrication failure,Bearing assembly,8333.97
+ME-00052,M047,corrective,Vibration misalignment detected on M047,E018,2024-12-11T23:00:12,2024-12-12T06:12:12,7.2,Electrical fault,Filter replacement,14453.25
+ME-00053,M030,emergency,Overheating detected on M030,E027,2024-03-22T19:02:17,2024-03-22T19:35:17,0.55,Scheduled PM,Bearing assembly,8467.73
+ME-00054,M033,preventive,Sensor drift detected on M033,E035,2023-04-02T03:12:20,2023-04-02T12:56:08,9.73,Operator error,Sensor replacement,10474.04
+ME-00055,M025,corrective,Vibration misalignment detected on M025,E050,2024-08-21T07:13:43,2024-08-21T10:31:43,3.3,Software fault,Motor brushes,7018.66
+ME-00056,M038,emergency,Lubrication failure detected on M038,E025,2024-01-10T14:34:30,2024-01-10T16:24:54,1.84,Electrical fault,Motor brushes,10577.41
+ME-00057,M021,preventive,Bearing wear detected on M021,E045,2023-10-02T12:11:29,2023-10-02T18:37:53,6.44,Sensor drift,Lubricant replenishment,4451.89
+ME-00058,M026,corrective,Scheduled PM detected on M026,E012,2024-09-29T23:56:29,2024-09-30T04:22:17,4.43,Software fault,Sensor replacement,5432.36
+ME-00059,M037,preventive,Electrical fault detected on M037,E032,2024-08-02T19:21:38,2024-08-03T03:43:14,8.36,Electrical fault,Lubricant replenishment,11084.35
+ME-00060,M017,preventive,Operator error detected on M017,E023,2023-06-07T17:50:33,2023-06-08T03:56:33,10.1,Overheating,Seal kit,1779.0
+ME-00061,M006,corrective,Bearing wear detected on M006,E049,2024-05-30T13:07:16,2024-05-30T19:17:28,6.17,Scheduled PM,Bearing assembly,12750.56
+ME-00062,M024,corrective,Operator error detected on M024,E018,2024-01-18T15:53:23,2024-01-19T02:43:11,10.83,Software fault,Lubricant replenishment,14769.04
+ME-00063,M033,preventive,Overheating detected on M033,E004,2023-06-22T18:06:34,2023-06-23T03:14:22,9.13,Scheduled PM,Seal kit,6463.0
+ME-00064,M035,preventive,Overheating detected on M035,E030,2023-09-27T23:56:07,2023-09-28T04:57:55,5.03,Lubrication failure,Motor brushes,7869.44
+ME-00065,M021,corrective,Seal leak detected on M021,E038,2023-01-10T10:20:25,2023-01-10T18:35:25,8.25,Lubrication failure,Sensor replacement,5551.71
+ME-00066,M017,preventive,Software fault detected on M017,E040,2023-07-24T09:51:40,2023-07-24T13:05:28,3.23,Vibration misalignment,Sensor replacement,2921.92
+ME-00067,M028,preventive,Vibration misalignment detected on M028,E026,2024-06-28T12:13:48,2024-06-28T21:22:48,9.15,Sensor drift,Belt replacement,2862.36
+ME-00068,M009,emergency,Lubrication failure detected on M009,E047,2024-06-17T02:11:20,2024-06-17T05:19:08,3.13,Sensor drift,Seal kit,3689.92
+ME-00069,M028,emergency,Overheating detected on M028,E031,2023-06-02T12:52:59,2023-06-02T15:03:47,2.18,Bearing wear,Lubricant replenishment,6438.51
+ME-00070,M009,emergency,Scheduled PM detected on M009,E047,2024-10-21T23:46:32,2024-10-22T07:31:32,7.75,Vibration misalignment,Seal kit,7401.98
+ME-00071,M017,corrective,Lubrication failure detected on M017,E045,2024-03-17T07:12:09,2024-03-17T08:15:09,1.05,Overheating,Bearing assembly,3388.92
+ME-00072,M017,preventive,Vibration misalignment detected on M017,E017,2024-05-04T11:28:57,2024-05-04T13:05:33,1.61,Vibration misalignment,Sensor replacement,8493.18
+ME-00073,M017,preventive,Operator error detected on M017,E013,2023-11-17T01:46:46,2023-11-17T03:40:10,1.89,Operator error,Filter replacement,9818.01
+ME-00074,M035,preventive,Vibration misalignment detected on M035,E044,2024-08-29T08:00:57,2024-08-29T11:47:09,3.77,Scheduled PM,Belt replacement,11666.22
+ME-00075,M029,emergency,Software fault detected on M029,E041,2023-10-24T05:40:41,2023-10-24T13:14:17,7.56,Overheating,Seal kit,2680.12
+ME-00076,M022,preventive,Lubrication failure detected on M022,E006,2024-04-20T20:17:17,2024-04-21T03:21:29,7.07,Overheating,Sensor replacement,3577.63
+ME-00077,M021,corrective,Seal leak detected on M021,E018,2024-07-06T01:26:24,2024-07-06T05:01:12,3.58,Software fault,Seal kit,12969.54
+ME-00078,M024,corrective,Seal leak detected on M024,E011,2024-02-09T20:56:42,2024-02-10T08:32:42,11.6,Overheating,Seal kit,541.9
+ME-00079,M047,preventive,Lubrication failure detected on M047,E014,2023-07-15T17:02:24,2023-07-16T04:21:36,11.32,Overheating,Belt replacement,1724.54
+ME-00080,M005,emergency,Bearing wear detected on M005,E050,2024-01-03T18:49:21,2024-01-04T01:37:57,6.81,Seal leak,Filter replacement,11521.95
+ME-00081,M006,preventive,Seal leak detected on M006,E020,2024-04-25T08:15:34,2024-04-25T10:32:58,2.29,Electrical fault,Lubricant replenishment,11116.38
+ME-00082,M029,corrective,Overheating detected on M029,E002,2023-04-13T05:10:57,2023-04-13T11:44:33,6.56,Bearing wear,Motor brushes,5481.25
+ME-00083,M021,emergency,Scheduled PM detected on M021,E018,2023-12-30T03:07:03,2023-12-30T14:49:39,11.71,Scheduled PM,Belt replacement,2199.7
+ME-00084,M045,corrective,Operator error detected on M045,E028,2024-04-04T03:53:12,2024-04-04T11:15:24,7.37,Scheduled PM,Motor brushes,9665.02
+ME-00085,M020,emergency,Lubrication failure detected on M020,E029,2024-01-10T08:38:17,2024-01-10T15:20:53,6.71,Sensor drift,Sensor replacement,6300.62
+ME-00086,M010,preventive,Overheating detected on M010,E023,2023-01-01T07:43:17,2023-01-01T14:14:29,6.52,Sensor drift,Belt replacement,8119.46
+ME-00087,M045,emergency,Bearing wear detected on M045,E050,2024-08-10T01:01:54,2024-08-10T07:01:18,5.99,Seal leak,Seal kit,4535.25
+ME-00088,M015,corrective,Seal leak detected on M015,E036,2024-03-02T01:24:57,2024-03-02T06:12:57,4.8,Seal leak,Belt replacement,3898.46
+ME-00089,M046,corrective,Electrical fault detected on M046,E017,2023-10-30T22:58:05,2023-10-31T08:59:53,10.03,Lubrication failure,Belt replacement,9454.78
+ME-00090,M034,corrective,Sensor drift detected on M034,E019,2024-12-08T00:46:46,2024-12-08T08:19:46,7.55,Scheduled PM,Seal kit,4178.57
+ME-00091,M013,emergency,Lubrication failure detected on M013,E041,2023-05-22T22:18:58,2023-05-23T00:23:10,2.07,Software fault,Filter replacement,6900.96
+ME-00092,M045,corrective,Overheating detected on M045,E004,2023-05-27T02:38:56,2023-05-27T06:50:20,4.19,Scheduled PM,Bearing assembly,2951.88
+ME-00093,M007,preventive,Bearing wear detected on M007,E015,2023-04-08T08:53:58,2023-04-08T17:37:10,8.72,Lubrication failure,Lubricant replenishment,417.93
+ME-00094,M014,preventive,Software fault detected on M014,E024,2023-08-31T06:12:37,2023-08-31T15:45:01,9.54,Software fault,Motor brushes,11913.09
+ME-00095,M022,preventive,Bearing wear detected on M022,E018,2024-08-06T05:37:51,2024-08-06T17:04:15,11.44,Seal leak,Bearing assembly,8239.24
+ME-00096,M012,preventive,Seal leak detected on M012,E001,2024-10-15T21:25:45,2024-10-16T00:48:33,3.38,Lubrication failure,Seal kit,10777.3
+ME-00097,M025,corrective,Bearing wear detected on M025,E013,2023-12-11T07:23:25,2023-12-11T10:43:49,3.34,Software fault,Motor brushes,11610.74
+ME-00098,M034,corrective,Sensor drift detected on M034,E021,2023-06-12T03:44:10,2023-06-12T09:40:34,5.94,Overheating,Motor brushes,10977.91
+ME-00099,M048,emergency,Software fault detected on M048,E041,2024-02-09T20:46:09,2024-02-09T22:40:09,1.9,Sensor drift,Lubricant replenishment,5534.31
+ME-00100,M004,emergency,Electrical fault detected on M004,E041,2023-06-19T09:52:01,2023-06-19T21:33:25,11.69,Seal leak,Sensor replacement,423.0
+ME-00101,M018,corrective,Bearing wear detected on M018,E003,2023-11-04T16:24:05,2023-11-05T01:58:53,9.58,Operator error,Seal kit,10423.12
+ME-00102,M045,corrective,Electrical fault detected on M045,E011,2023-10-16T17:22:22,2023-10-17T02:43:58,9.36,Software fault,Bearing assembly,10351.98
+ME-00103,M022,emergency,Bearing wear detected on M022,E023,2024-08-13T05:13:39,2024-08-13T12:55:03,7.69,Overheating,Motor brushes,8138.03
+ME-00104,M007,preventive,Scheduled PM detected on M007,E042,2023-06-30T23:22:10,2023-07-01T03:30:34,4.14,Vibration misalignment,Seal kit,13398.58
+ME-00105,M047,preventive,Overheating detected on M047,E017,2024-06-19T14:33:03,2024-06-19T19:23:27,4.84,Bearing wear,Belt replacement,10658.06
+ME-00106,M036,preventive,Operator error detected on M036,E012,2024-06-25T15:43:33,2024-06-25T21:51:57,6.14,Scheduled PM,Sensor replacement,4990.48
+ME-00107,M030,preventive,Scheduled PM detected on M030,E011,2024-10-07T23:28:46,2024-10-08T06:51:34,7.38,Lubrication failure,Filter replacement,2494.38
+ME-00108,M019,corrective,Bearing wear detected on M019,E050,2024-02-25T22:16:00,2024-02-26T02:59:12,4.72,Scheduled PM,Belt replacement,11058.13
+ME-00109,M002,corrective,Electrical fault detected on M002,E021,2023-10-11T00:51:12,2023-10-11T10:16:24,9.42,Lubrication failure,Motor brushes,14514.01
+ME-00110,M025,preventive,Scheduled PM detected on M025,E010,2024-06-14T22:13:18,2024-06-15T04:26:30,6.22,Operator error,Sensor replacement,4974.48
+ME-00111,M042,preventive,Lubrication failure detected on M042,E003,2023-03-17T00:20:50,2023-03-17T06:52:02,6.52,Overheating,Lubricant replenishment,13127.69
+ME-00112,M013,preventive,Operator error detected on M013,E042,2023-05-30T01:59:35,2023-05-30T03:37:59,1.64,Seal leak,Motor brushes,7450.66
+ME-00113,M040,corrective,Electrical fault detected on M040,E039,2023-07-19T01:02:24,2023-07-19T02:06:00,1.06,Lubrication failure,Bearing assembly,13967.12
+ME-00114,M014,corrective,Lubrication failure detected on M014,E030,2024-12-22T08:41:58,2024-12-22T19:25:46,10.73,Bearing wear,Sensor replacement,8458.69
+ME-00115,M027,corrective,Operator error detected on M027,E018,2024-09-09T03:53:06,2024-09-09T12:32:06,8.65,Scheduled PM,Bearing assembly,11067.65
+ME-00116,M020,preventive,Lubrication failure detected on M020,E007,2023-06-17T22:40:07,2023-06-18T10:13:07,11.55,Electrical fault,Filter replacement,5902.9
+ME-00117,M013,corrective,Overheating detected on M013,E036,2023-07-13T11:16:44,2023-07-13T18:20:20,7.06,Scheduled PM,Belt replacement,11242.4
+ME-00118,M050,corrective,Seal leak detected on M050,E007,2023-10-06T06:55:14,2023-10-06T15:10:50,8.26,Overheating,Seal kit,2869.87
+ME-00119,M026,corrective,Operator error detected on M026,E029,2024-05-25T23:16:57,2024-05-26T01:36:09,2.32,Vibration misalignment,Sensor replacement,8341.2
+ME-00120,M021,corrective,Seal leak detected on M021,E047,2023-11-17T12:38:09,2023-11-17T21:55:33,9.29,Vibration misalignment,Filter replacement,3762.69
+ME-00121,M035,preventive,Sensor drift detected on M035,E024,2024-08-17T23:50:08,2024-08-18T06:39:56,6.83,Software fault,Belt replacement,14405.4
+ME-00122,M001,corrective,Scheduled PM detected on M001,E009,2023-08-10T05:07:55,2023-08-10T12:28:55,7.35,Sensor drift,Bearing assembly,4644.94
+ME-00123,M015,preventive,Sensor drift detected on M015,E036,2023-09-02T20:14:55,2023-09-02T20:59:55,0.75,Scheduled PM,Filter replacement,8645.89
+ME-00124,M037,preventive,Overheating detected on M037,E009,2023-01-30T13:27:20,2023-01-30T19:14:44,5.79,Sensor drift,Sensor replacement,13366.46
+ME-00125,M016,preventive,Operator error detected on M016,E026,2024-09-22T05:31:10,2024-09-22T09:28:10,3.95,Operator error,Lubricant replenishment,11067.14
+ME-00126,M047,preventive,Operator error detected on M047,E007,2024-01-11T01:04:13,2024-01-11T03:33:37,2.49,Operator error,Motor brushes,4645.82
+ME-00127,M047,corrective,Bearing wear detected on M047,E050,2023-10-24T14:32:06,2023-10-24T15:56:06,1.4,Vibration misalignment,Sensor replacement,13220.93
+ME-00128,M028,preventive,Electrical fault detected on M028,E048,2024-11-05T07:32:39,2024-11-05T09:26:03,1.89,Operator error,Bearing assembly,9581.53
+ME-00129,M041,preventive,Vibration misalignment detected on M041,E035,2023-08-25T23:34:27,2023-08-26T06:06:15,6.53,Operator error,Lubricant replenishment,5037.11
+ME-00130,M045,preventive,Seal leak detected on M045,E029,2023-02-09T11:45:27,2023-02-09T20:00:27,8.25,Operator error,Filter replacement,7669.99
+ME-00131,M015,preventive,Overheating detected on M015,E022,2024-09-03T00:58:03,2024-09-03T05:59:51,5.03,Lubrication failure,Belt replacement,8657.32
+ME-00132,M004,corrective,Scheduled PM detected on M004,E028,2023-07-24T04:26:07,2023-07-24T05:54:55,1.48,Overheating,Seal kit,2196.09
+ME-00133,M036,preventive,Electrical fault detected on M036,E036,2023-11-04T07:16:35,2023-11-04T15:16:35,8.0,Operator error,Motor brushes,7958.87
+ME-00134,M016,preventive,Operator error detected on M016,E006,2024-08-26T14:04:39,2024-08-26T19:31:39,5.45,Lubrication failure,Motor brushes,6321.01
+ME-00135,M024,preventive,Bearing wear detected on M024,E050,2023-09-07T08:59:47,2023-09-07T13:27:23,4.46,Sensor drift,Lubricant replenishment,14817.25
+ME-00136,M040,corrective,Overheating detected on M040,E029,2024-09-15T19:12:09,2024-09-16T00:47:33,5.59,Bearing wear,Seal kit,3655.65
+ME-00137,M044,preventive,Lubrication failure detected on M044,E008,2024-08-11T19:10:53,2024-08-12T04:03:41,8.88,Bearing wear,Lubricant replenishment,14244.33
+ME-00138,M010,emergency,Vibration misalignment detected on M010,E045,2024-09-29T06:24:18,2024-09-29T10:12:54,3.81,Lubrication failure,Sensor replacement,6860.91
+ME-00139,M002,preventive,Electrical fault detected on M002,E035,2024-07-29T00:50:30,2024-07-29T07:31:54,6.69,Scheduled PM,Seal kit,4028.14
+ME-00140,M031,corrective,Bearing wear detected on M031,E025,2023-04-21T00:54:24,2023-04-21T09:23:48,8.49,Operator error,Motor brushes,7996.63
+ME-00141,M017,preventive,Operator error detected on M017,E018,2023-08-09T20:23:46,2023-08-09T23:12:22,2.81,Bearing wear,Belt replacement,9890.42
+ME-00142,M001,preventive,Vibration misalignment detected on M001,E007,2024-05-28T04:14:30,2024-05-28T07:51:42,3.62,Bearing wear,Sensor replacement,13037.67
+ME-00143,M042,preventive,Lubrication failure detected on M042,E021,2023-10-23T22:47:05,2023-10-24T05:08:05,6.35,Software fault,Seal kit,9037.17
+ME-00144,M006,preventive,Scheduled PM detected on M006,E046,2024-01-25T02:48:27,2024-01-25T14:25:39,11.62,Bearing wear,Bearing assembly,3861.4
+ME-00145,M034,preventive,Overheating detected on M034,E002,2024-01-16T19:00:36,2024-01-17T00:01:48,5.02,Vibration misalignment,Motor brushes,5408.31
+ME-00146,M041,preventive,Bearing wear detected on M041,E041,2024-01-25T14:00:16,2024-01-25T17:40:28,3.67,Sensor drift,Belt replacement,13377.95
+ME-00147,M002,emergency,Vibration misalignment detected on M002,E026,2023-08-06T21:11:30,2023-08-07T00:16:54,3.09,Overheating,Bearing assembly,11002.37
+ME-00148,M034,emergency,Electrical fault detected on M034,E027,2024-04-20T22:51:55,2024-04-21T09:24:19,10.54,Electrical fault,Filter replacement,2460.69
+ME-00149,M020,emergency,Overheating detected on M020,E014,2023-09-14T00:18:44,2023-09-14T05:58:56,5.67,Overheating,Filter replacement,8212.04
+ME-00150,M013,emergency,Scheduled PM detected on M013,E009,2023-08-29T06:08:51,2023-08-29T14:34:03,8.42,Seal leak,Seal kit,2348.26
+ME-00151,M037,emergency,Scheduled PM detected on M037,E047,2023-09-04T20:33:30,2023-09-04T21:50:18,1.28,Lubrication failure,Lubricant replenishment,4900.44
+ME-00152,M010,corrective,Seal leak detected on M010,E027,2024-08-17T18:44:34,2024-08-17T22:54:10,4.16,Sensor drift,Belt replacement,11235.02
+ME-00153,M041,emergency,Electrical fault detected on M041,E007,2023-08-01T21:55:49,2023-08-02T00:10:49,2.25,Overheating,Lubricant replenishment,587.73
+ME-00154,M040,corrective,Electrical fault detected on M040,E039,2024-04-15T15:17:10,2024-04-15T22:18:22,7.02,Electrical fault,Lubricant replenishment,10373.19
+ME-00155,M023,preventive,Scheduled PM detected on M023,E039,2024-08-28T23:00:53,2024-08-29T04:59:41,5.98,Software fault,Motor brushes,9813.61
+ME-00156,M012,emergency,Overheating detected on M012,E013,2024-01-17T23:12:35,2024-01-18T05:09:35,5.95,Electrical fault,Bearing assembly,6247.12
+ME-00157,M001,emergency,Electrical fault detected on M001,E049,2023-11-18T01:41:55,2023-11-18T04:45:31,3.06,Electrical fault,Bearing assembly,2820.76
+ME-00158,M029,emergency,Software fault detected on M029,E016,2024-01-16T19:11:51,2024-01-17T03:36:27,8.41,Seal leak,Belt replacement,11687.98
+ME-00159,M039,corrective,Seal leak detected on M039,E040,2023-10-23T16:41:18,2023-10-24T01:28:06,8.78,Operator error,Filter replacement,8135.16
+ME-00160,M042,emergency,Lubrication failure detected on M042,E029,2024-09-03T11:14:58,2024-09-03T12:11:22,0.94,Software fault,Seal kit,13190.95
+ME-00161,M016,corrective,Bearing wear detected on M016,E036,2023-11-04T12:43:37,2023-11-05T00:32:13,11.81,Seal leak,Filter replacement,11524.37
+ME-00162,M004,preventive,Sensor drift detected on M004,E050,2023-12-08T15:52:41,2023-12-08T20:57:29,5.08,Sensor drift,Belt replacement,2664.0
+ME-00163,M019,corrective,Overheating detected on M019,E030,2023-02-12T14:49:24,2023-02-12T23:15:12,8.43,Software fault,Bearing assembly,10895.17
+ME-00164,M008,preventive,Scheduled PM detected on M008,E009,2024-03-30T23:32:11,2024-03-31T10:49:35,11.29,Seal leak,Belt replacement,4987.22
+ME-00165,M002,preventive,Electrical fault detected on M002,E030,2024-04-03T18:16:40,2024-04-04T05:05:16,10.81,Lubrication failure,Sensor replacement,4996.31
+ME-00166,M042,emergency,Lubrication failure detected on M042,E006,2024-09-10T21:34:45,2024-09-10T23:58:09,2.39,Lubrication failure,Motor brushes,6851.1
+ME-00167,M024,preventive,Scheduled PM detected on M024,E040,2024-07-03T14:38:18,2024-07-03T19:33:30,4.92,Overheating,Belt replacement,8345.12
+ME-00168,M003,corrective,Overheating detected on M003,E011,2024-12-09T19:37:27,2024-12-09T23:58:27,4.35,Overheating,Lubricant replenishment,11583.52
+ME-00169,M004,preventive,Software fault detected on M004,E019,2023-08-29T15:50:21,2023-08-30T00:44:21,8.9,Overheating,Bearing assembly,13498.42
+ME-00170,M013,preventive,Software fault detected on M013,E032,2024-08-17T18:00:43,2024-08-17T21:25:19,3.41,Software fault,Filter replacement,12150.33
+ME-00171,M039,emergency,Software fault detected on M039,E030,2023-07-05T00:22:26,2023-07-05T03:21:50,2.99,Seal leak,Belt replacement,1375.19
+ME-00172,M039,preventive,Operator error detected on M039,E041,2024-11-16T10:48:03,2024-11-16T17:35:27,6.79,Scheduled PM,Seal kit,12413.74
+ME-00173,M004,preventive,Bearing wear detected on M004,E010,2023-02-13T00:27:58,2023-02-13T08:28:34,8.01,Bearing wear,Motor brushes,8755.77
+ME-00174,M039,preventive,Lubrication failure detected on M039,E027,2024-12-16T03:12:51,2024-12-16T04:43:27,1.51,Overheating,Lubricant replenishment,10146.94
+ME-00175,M040,corrective,Scheduled PM detected on M040,E012,2024-06-27T20:05:24,2024-06-28T03:25:48,7.34,Software fault,Motor brushes,8768.7
+ME-00176,M003,preventive,Seal leak detected on M003,E005,2023-08-21T17:15:12,2023-08-21T21:27:48,4.21,Seal leak,Seal kit,8346.97
+ME-00177,M019,preventive,Sensor drift detected on M019,E022,2023-04-06T00:40:40,2023-04-06T09:10:04,8.49,Scheduled PM,Belt replacement,7964.76
+ME-00178,M045,preventive,Scheduled PM detected on M045,E006,2023-02-15T10:38:21,2023-02-15T12:23:57,1.76,Software fault,Motor brushes,10392.08
+ME-00179,M046,preventive,Sensor drift detected on M046,E034,2024-04-18T03:41:09,2024-04-18T13:56:09,10.25,Operator error,Filter replacement,5437.03
+ME-00180,M009,corrective,Software fault detected on M009,E032,2024-01-21T19:30:33,2024-01-22T01:59:21,6.48,Overheating,Filter replacement,3644.28
+ME-00181,M019,emergency,Software fault detected on M019,E041,2023-01-02T11:28:13,2023-01-02T13:19:49,1.86,Lubrication failure,Motor brushes,12751.43
+ME-00182,M040,emergency,Vibration misalignment detected on M040,E036,2023-11-18T20:17:10,2023-11-18T21:18:22,1.02,Electrical fault,Bearing assembly,9681.15
+ME-00183,M045,preventive,Sensor drift detected on M045,E033,2024-09-06T00:18:42,2024-09-06T01:35:30,1.28,Scheduled PM,Sensor replacement,11552.08
+ME-00184,M008,corrective,Operator error detected on M008,E040,2023-09-23T09:26:28,2023-09-23T14:29:28,5.05,Bearing wear,Seal kit,2799.31
+ME-00185,M022,corrective,Software fault detected on M022,E003,2024-12-17T14:32:27,2024-12-17T22:46:15,8.23,Overheating,Belt replacement,2499.72
+ME-00186,M030,emergency,Software fault detected on M030,E027,2024-02-22T07:48:01,2024-02-22T18:36:01,10.8,Bearing wear,Seal kit,7911.88
+ME-00187,M037,corrective,Bearing wear detected on M037,E014,2023-09-03T07:23:57,2023-09-03T14:16:45,6.88,Operator error,Motor brushes,5109.45
+ME-00188,M023,preventive,Bearing wear detected on M023,E022,2023-04-27T05:14:42,2023-04-27T08:58:30,3.73,Seal leak,Motor brushes,8107.24
+ME-00189,M011,corrective,Lubrication failure detected on M011,E049,2023-10-30T20:02:30,2023-10-30T22:41:30,2.65,Sensor drift,Motor brushes,12895.73
+ME-00190,M046,preventive,Electrical fault detected on M046,E024,2023-11-18T17:05:16,2023-11-18T18:35:16,1.5,Software fault,Seal kit,14270.76
+ME-00191,M014,corrective,Bearing wear detected on M014,E050,2023-05-17T04:28:26,2023-05-17T06:15:50,1.79,Electrical fault,Bearing assembly,6767.86
+ME-00192,M002,corrective,Electrical fault detected on M002,E022,2024-12-04T03:35:55,2024-12-04T09:50:55,6.25,Software fault,Motor brushes,13133.41
+ME-00193,M020,corrective,Lubrication failure detected on M020,E034,2023-04-22T13:12:47,2023-04-22T22:33:47,9.35,Overheating,Lubricant replenishment,10923.65
+ME-00194,M030,preventive,Bearing wear detected on M030,E020,2024-11-02T23:13:50,2024-11-03T05:44:26,6.51,Bearing wear,Motor brushes,12752.24
+ME-00195,M006,preventive,Scheduled PM detected on M006,E050,2024-11-21T21:37:34,2024-11-21T22:39:22,1.03,Sensor drift,Bearing assembly,8747.89
+ME-00196,M020,corrective,Electrical fault detected on M020,E019,2023-06-13T05:48:25,2023-06-13T09:59:49,4.19,Sensor drift,Filter replacement,4923.42
+ME-00197,M029,corrective,Sensor drift detected on M029,E008,2023-08-01T00:38:34,2023-08-01T02:51:46,2.22,Bearing wear,Filter replacement,8482.46
+ME-00198,M007,preventive,Sensor drift detected on M007,E010,2023-09-30T08:24:12,2023-09-30T15:13:24,6.82,Sensor drift,Filter replacement,3823.41
+ME-00199,M005,preventive,Software fault detected on M005,E004,2024-11-24T06:37:01,2024-11-24T11:01:01,4.4,Overheating,Bearing assembly,7166.89
+ME-00200,M044,preventive,Seal leak detected on M044,E026,2023-10-26T04:48:56,2023-10-26T05:56:08,1.12,Overheating,Motor brushes,9022.6

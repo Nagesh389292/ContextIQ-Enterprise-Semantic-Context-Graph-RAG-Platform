@@ -1,0 +1,46 @@
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual environments & Node ──────────────────────────────
+.venv/
+venv/
+env/
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# ── Environment secrets ────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── IDE & Scratch ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+scratch/
+.system_generated/
+
+# ── Local data / vector store ──────────────────────────────────
+data/chroma_db/
+data/processed/
+
+# ── Test artifacts ────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+evaluation/evaluation_results.csv
+
+# ── OS ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db

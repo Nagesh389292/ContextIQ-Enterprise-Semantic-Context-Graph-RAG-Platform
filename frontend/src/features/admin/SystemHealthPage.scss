@@ -1,0 +1,25 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.system-health-page {
+  display: flex; flex-direction: column; gap: $space-5;
+  .page-header { @include flex-between; h1 { font-size: 22px; color: var(--text-primary); } .subtitle { color: var(--text-muted); font-size: 13px; margin-top: 2px; } .status-summary-badge { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: $color-success; background: rgba(16, 185, 129, 0.12); padding: 6px 12px; border-radius: $radius-full; } }
+
+  .services-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: $space-4;
+
+    .service-card {
+      @include card-style; display: flex; flex-direction: column; gap: $space-3;
+      .card-top {
+        @include flex-between;
+        .name-group { display: flex; align-items: center; gap: $space-2; font-weight: 600; font-size: 14px; color: var(--text-primary); .service-icon { color: $color-primary; } }
+        .status-pill {
+          display: flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 600; text-transform: capitalize; padding: 2px 8px; border-radius: $radius-full;
+          &.healthy { background: rgba(16, 185, 129, 0.15); color: #10B981; .pulse-dot { background: #10B981; } }
+          .pulse-dot { width: 6px; height: 6px; border-radius: $radius-full; }
+        }
+      }
+      .service-details { font-size: 11px; color: var(--text-muted); }
+    }
+  }
+}

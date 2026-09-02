@@ -1,0 +1,26 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.evaluation-page {
+  display: flex; flex-direction: column; gap: $space-5;
+  .page-header { @include flex-between; h1 { font-size: 22px; color: var(--text-primary); } .subtitle { color: var(--text-muted); font-size: 13px; margin-top: 2px; } .eval-badge { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: $color-primary; background: rgba(59, 130, 246, 0.12); padding: 6px 12px; border-radius: $radius-full; } }
+
+  .eval-metrics-grid {
+    display: grid; grid-template-columns: repeat(6, 1fr); gap: $space-3;
+    @media (max-width: 1200px) { grid-template-columns: repeat(3, 1fr); }
+    @media (max-width: 640px) { grid-template-columns: repeat(2, 1fr); }
+    .eval-card { @include card-style; text-align: center; .e-title { font-size: 11px; color: var(--text-muted); display: flex; align-items: center; justify-content: center; gap: 4px; } .e-val { font-size: 24px; font-weight: 700; color: var(--text-primary); margin-top: 4px; display: block; } .e-sub { font-size: 10px; color: var(--text-muted); } }
+  }
+
+  .testcases-card {
+    @include card-style; padding: 0; overflow: hidden;
+    h2 { font-size: 16px; padding: $space-4; border-bottom: 1px solid var(--border-color); color: var(--text-primary); }
+
+    .testcases-table {
+      width: 100%; border-collapse: collapse; text-align: left;
+      th { font-size: 11px; text-transform: uppercase; color: var(--text-muted); padding: $space-3 $space-4; border-bottom: 1px solid var(--border-color); }
+      td { font-size: 12px; color: var(--text-primary); padding: $space-3 $space-4; border-bottom: 1px solid var(--border-color); }
+      .status-pass { display: flex; align-items: center; gap: 4px; color: $color-success; font-weight: 600; text-transform: capitalize; }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+machine_id,name,machine_type,plant_id,line_id,supplier_id,manufacturer,model_number,installation_date,status
+M001,Welding Robot Unit M001,Welding Robot,P001,L003,S002,ESAB,IC-9826-TX,2017-12-17,operational
+M002,Conveyor Unit M002,Conveyor,P002,L004,S012,Dorner,QG-0533-WX,2016-01-14,operational
+M003,Grinding Machine Unit M003,Grinding Machine,P003,L007,S004,Okamoto,PK-8692-ZZ,2015-06-30,operational
+M004,Grinding Machine Unit M004,Grinding Machine,P001,L001,S003,Studer,VV-2602-YA,2022-02-22,idle
+M005,Robot Arm Unit M005,Robot Arm,P002,L004,S011,Fanuc Robotics,YC-3421-EO,2019-12-15,operational
+M006,Compressor Unit M006,Compressor,P003,L008,S015,Ingersoll Rand,YO-3754-OB,2015-02-09,operational
+M007,Welding Robot Unit M007,Welding Robot,P001,L003,S002,Lincoln Electric,EX-3654-RW,2021-02-12,operational
+M008,Conveyor Unit M008,Conveyor,P002,L005,S001,Lewco,BH-8685-QL,2021-03-13,operational
+M009,Robot Arm Unit M009,Robot Arm,P003,L006,S002,KUKA,MB-9401-WU,2018-06-16,operational
+M010,Grinding Machine Unit M010,Grinding Machine,P001,L001,S004,Studer,HY-5698-KM,2019-01-05,operational
+M011,Robot Arm Unit M011,Robot Arm,P002,L004,S009,Fanuc Robotics,HZ-4060-IR,2016-02-26,operational
+M012,Hydraulic Press Unit M012,Hydraulic Press,P003,L006,S012,Enerpac,QV-3561-NU,2021-12-17,operational
+M013,Robot Arm Unit M013,Robot Arm,P001,L003,S012,KUKA,QA-1484-UZ,2023-12-21,maintenance
+M014,Compressor Unit M014,Compressor,P002,L005,S004,Atlas Copco,AQ-4823-YR,2017-01-04,operational
+M015,Conveyor Unit M015,Conveyor,P003,L007,S010,Hytrol,ZJ-2994-AT,2023-12-30,operational
+M016,Welding Robot Unit M016,Welding Robot,P001,L002,S013,Lincoln Electric,MP-4369-UD,2017-12-28,operational
+M017,Welding Robot Unit M017,Welding Robot,P002,L004,S013,Lincoln Electric,EY-7738-YV,2019-04-16,fault
+M018,Grinding Machine Unit M018,Grinding Machine,P003,L006,S012,Okamoto,QO-2148-NV,2017-06-30,operational
+M019,Compressor Unit M019,Compressor,P001,L002,S006,Kaeser,ZM-1343-JB,2018-06-04,maintenance
+M020,Grinding Machine Unit M020,Grinding Machine,P002,L005,S003,Studer,XE-0379-DA,2017-07-02,operational
+M021,Robot Arm Unit M021,Robot Arm,P003,L006,S013,ABB,ZP-9367-JP,2018-09-06,operational
+M022,CNC Unit M022,CNC,P001,L002,S002,Haas,LZ-0163-SH,2018-12-09,operational
+M023,Compressor Unit M023,Compressor,P002,L004,S007,Ingersoll Rand,HD-7083-IZ,2021-01-05,operational
+M024,CNC Unit M024,CNC,P003,L006,S006,FANUC,UW-7889-CN,2017-12-05,operational
+M025,Conveyor Unit M025,Conveyor,P001,L002,S010,Dorner,KV-8687-EC,2016-03-20,operational
+M026,Conveyor Unit M026,Conveyor,P002,L005,S013,Lewco,FO-4348-PR,2023-10-27,operational
+M027,Hydraulic Press Unit M027,Hydraulic Press,P003,L006,S012,Greenerd,RV-7143-UI,2016-04-18,operational
+M028,Hydraulic Press Unit M028,Hydraulic Press,P001,L002,S009,Schuler,YS-1223-JT,2017-11-09,operational
+M029,Compressor Unit M029,Compressor,P002,L004,S015,Atlas Copco,VI-3166-DA,2020-10-30,idle
+M030,Hydraulic Press Unit M030,Hydraulic Press,P003,L007,S002,Greenerd,XL-0366-SB,2023-01-25,idle
+M031,Welding Robot Unit M031,Welding Robot,P001,L003,S005,ESAB,WT-9670-WY,2017-03-18,operational
+M032,CNC Unit M032,CNC,P002,L005,S010,DMG Mori,OF-6889-OR,2018-09-14,operational
+M033,Welding Robot Unit M033,Welding Robot,P003,L006,S012,Lincoln Electric,VQ-6706-RZ,2023-01-27,fault
+M034,Hydraulic Press Unit M034,Hydraulic Press,P001,L001,S001,Enerpac,NI-6272-BZ,2022-06-24,operational
+M035,Compressor Unit M035,Compressor,P002,L004,S013,Ingersoll Rand,PB-9901-ID,2018-04-26,operational
+M036,Robot Arm Unit M036,Robot Arm,P003,L007,S002,ABB,UN-2046-DU,2022-06-16,idle
+M037,Welding Robot Unit M037,Welding Robot,P001,L001,S014,ESAB,QF-5646-EB,2016-12-13,operational
+M038,Conveyor Unit M038,Conveyor,P002,L004,S007,Hytrol,PE-8053-XP,2021-02-22,maintenance
+M039,Conveyor Unit M039,Conveyor,P003,L007,S008,Hytrol,BN-0033-JP,2017-05-10,operational
+M040,Hydraulic Press Unit M040,Hydraulic Press,P001,L003,S014,Greenerd,ND-2719-SQ,2022-05-05,operational
+M041,Compressor Unit M041,Compressor,P002,L005,S003,Kaeser,VT-5299-HX,2022-07-30,operational
+M042,Compressor Unit M042,Compressor,P003,L007,S006,Ingersoll Rand,BT-2419-KR,2016-11-26,operational
+M043,Conveyor Unit M043,Conveyor,P001,L001,S011,Lewco,LS-6631-OP,2022-06-12,operational
+M044,Conveyor Unit M044,Conveyor,P002,L005,S012,Dorner,YK-1491-YC,2023-06-04,operational
+M045,Conveyor Unit M045,Conveyor,P003,L008,S011,Dorner,EG-5865-PV,2017-03-26,operational
+M046,CNC Unit M046,CNC,P001,L001,S010,FANUC,BX-0671-OD,2020-04-30,operational
+M047,Grinding Machine Unit M047,Grinding Machine,P002,L004,S009,Studer,PR-2628-NZ,2020-02-09,operational
+M048,Welding Robot Unit M048,Welding Robot,P003,L008,S004,ESAB,UL-8776-RU,2017-03-07,operational
+M049,Compressor Unit M049,Compressor,P001,L001,S008,Kaeser,PW-3147-DK,2019-06-25,operational
+M050,Welding Robot Unit M050,Welding Robot,P002,L005,S005,ESAB,FU-9650-LF,2015-01-23,fault
