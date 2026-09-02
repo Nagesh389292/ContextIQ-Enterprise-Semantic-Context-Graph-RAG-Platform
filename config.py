@@ -38,7 +38,7 @@ class Settings(BaseSettings):
 
     # ── LLM ──────────────────────────────────────────────────
     gemini_api_key: str = ""
-    gemini_model: str = "gemini-2.0-flash"
+    gemini_model: str = "gemini-1.5-flash"
 
     # ── Embeddings ───────────────────────────────────────────
     embedding_provider: str = "sentence-transformers"

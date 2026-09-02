@@ -33,11 +33,16 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Seed Data Script
+      - name: Run Seed Data Validation Script
+        env:
+          DATABASE_URL: "sqlite:///./contextiq_ci.db"
         run: |
-          python scripts/seed_all.py
+          python scripts/seed_all.py --dry-run
 
       - name: Run Pytest Suite (148 Tests)
+        env:
+          PYTHONPATH: .
+          DATABASE_URL: "sqlite:///./contextiq_ci.db"
         run: |
           python -m pytest tests/ -v
 
@@ -58,14 +63,14 @@ jobs:
         uses: actions/cache@v3
         with:
           path: frontend/node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('frontend/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('frontend/package.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
 
       - name: Install Frontend Dependencies
         run: |
           cd frontend
-          npm ci
+          npm install
 
       - name: Compile Frontend Production Build
         run: |
