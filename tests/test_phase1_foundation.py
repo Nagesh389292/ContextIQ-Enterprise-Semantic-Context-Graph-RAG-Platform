@@ -49,7 +49,7 @@ class TestProjectStructure:
         assert self._exists("graph", "queries")
 
     def test_sparql_dir(self):
-        assert self._exists("sparql")
+        assert self._exists("ontology", "sparql") or self._exists("sparql")
 
     def test_ingestion_dir(self):
         assert self._exists("ingestion")

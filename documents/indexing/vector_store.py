@@ -42,12 +42,27 @@ class VectorStore:
         # Generate vector embeddings
         embeddings = self.embedder.encode_batch(texts)
 
-        self.collection.upsert(
-            ids=chunk_ids,
-            documents=texts,
-            metadatas=metadatas,
-            embeddings=embeddings,
-        )
+        try:
+            self.collection.upsert(
+                ids=chunk_ids,
+                documents=texts,
+                metadatas=metadatas,
+                embeddings=embeddings,
+            )
+        except Exception as exc:
+            if isinstance(exc, TypeError) and "object of type 'int' has no len()" in str(exc):
+                try:
+                    self.collection.delete(ids=chunk_ids)
+                except Exception:
+                    pass
+                self.collection.add(
+                    ids=chunk_ids,
+                    documents=texts,
+                    metadatas=metadatas,
+                    embeddings=embeddings,
+                )
+            else:
+                raise exc
         logger.info(f"Indexed {len(chunks)} chunks into ChromaDB collection '{self.collection_name}'.")
         return len(chunks)
 
