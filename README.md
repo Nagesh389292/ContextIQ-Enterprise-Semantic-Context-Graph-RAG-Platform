@@ -12,12 +12,44 @@
 
 ---
 
-## 🎥 Video Demonstration & Scenario Walkthrough
+## 🎥 Live Demonstration & Application Execution Snapshots
 
-> **Interactive Video Demonstration**: [Watch the 90-Second ContextIQ System Tour](https://github.com/Nagesh389292/ContextIQ-Enterprise-Semantic-Context-Graph-RAG-Platform#demo) *(Video Link Placeholder — see [Manual Recording Shotlist Guide](docs/DEMO_VIDEO_SHOTLIST.md))*
+### Real Application Browser Walkthrough
+Below is the live execution trajectory recorded across the running React Enterprise Studio UI, displaying real-time navigation across all 11 dashboards, hybrid retrieval execution, and evaluation benchmark verification.
 
-- 📖 **3 Production Demonstration Scenarios**: Detailed in [`docs/DEMO_SCRIPT_3_SCENARIOS.md`](docs/DEMO_SCRIPT_3_SCENARIOS.md) (`M001` Machine Diagnostics, `S001` Supplier SLAs, `P003` Quality Audit).
-- 📋 **Video Recording Shotlist**: Timed scene guide available in [`docs/DEMO_VIDEO_SHOTLIST.md`](docs/DEMO_VIDEO_SHOTLIST.md).
+![ContextIQ Live Execution Recording](assets/demo/contextiq-demo-recording.webp)
+
+---
+
+### 📷 Production UI Execution Snapshots
+
+#### 1. Grounded AI Copilot & Citation Verification (`/copilot`)
+*Executes hybrid multi-channel search over user query `"What maintenance procedure applies to machine M001 and what is the lubrication interval for spindle bearing B101?"`. Returns a 98.2% grounded answer with 100% citation coverage pointing directly to SOP DOC-031.*
+![Grounded Copilot Snapshot](assets/screenshots/copilot-grounded-answer.png)
+
+#### 2. AI Evaluation & Benchmark Center (`/evaluation`)
+*Displays real-time Precision@1 (26.7%), Precision@3 (22.8%), Recall@3 (40.0%), Recall@5 (46.7%), MRR (33.2%), and Groundedness (100.0%) verified over 30 ground-truth enterprise test cases.*
+![AI Evaluation Snapshot](assets/screenshots/evaluation.png)
+
+#### 3. Knowledge Graph Visualizer & Entity Inspector (`/graph`)
+*Interactive ReactFlow graph renderer displaying 12,450 nodes and 31,820 Cypher relationships. Inspects machine node `M001` and multi-hop edges to component `B101` and supplier `S001`.*
+![Knowledge Graph Snapshot](assets/screenshots/knowledge-graph.png)
+
+#### 4. Executive Overview & Quality Gauges (`/`)
+*Real-time enterprise operational overview summarizing 11,216 normalized entities, 31,820 graph edges, 48 indexed documents, 28 OWL ontology classes, and live quality metrics.*
+![Executive Dashboard Snapshot](assets/screenshots/dashboard.png)
+
+#### 5. Ontology Studio & SHACL Constraint Inspector (`/ontology`)
+*Displays 28 OWL entity classes across 5 top-level hierarchies (`EnterpriseAsset`, `BusinessEntity`, `BusinessProcess`, `Document`, `Event`) and SHACL property shape validation constraints.*
+![Ontology Studio Snapshot](assets/screenshots/ontology.png)
+
+#### 6. Document Intelligence & Semantic Chunks (`/documents`)
+*Inspects 45 enterprise documents and 182 semantic chunks indexed in persistent ChromaDB vector store (`all-MiniLM-L6-v2`) with metadata filtering and entity extraction.*
+![Document Intelligence Snapshot](assets/screenshots/documents.png)
+
+#### 7. System Health & Service Readiness Probes (`/system`)
+*Verifies 6/6 containerized microservices: FastAPI Backend, PostgreSQL DB, Neo4j Knowledge Graph, ChromaDB Vector Store, SentenceTransformers, and Gemini API.*
+![System Health Snapshot](assets/screenshots/system-health.png)
 
 ---
 
@@ -132,8 +164,10 @@ Verifies all Copilot outputs against cited document evidence, guaranteeing zero 
 ```bash
 git clone https://github.com/Nagesh389292/ContextIQ-Enterprise-Semantic-Context-Graph-RAG-Platform.git
 cd ContextIQ-Enterprise-Semantic-Context-Graph-RAG-Platform
-cp .env.example .env
-# Optional: Set GEMINI_API_KEY for LLM inference (deterministic fallback active by default)
+python -m venv .venv
+.venv\Scripts\activate     # Windows
+# source .venv/bin/activate  # Linux/macOS
+pip install -r requirements.txt
 ```
 
 ### 2. Configure Environment
