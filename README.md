@@ -12,6 +12,15 @@
 
 ---
 
+## 🎥 Video Demonstration & Scenario Walkthrough
+
+> **Interactive Video Demonstration**: [Watch the 90-Second ContextIQ System Tour](https://github.com/Nagesh389292/ContextIQ-Enterprise-Semantic-Context-Graph-RAG-Platform#demo) *(Video Link Placeholder — see [Manual Recording Shotlist Guide](docs/DEMO_VIDEO_SHOTLIST.md))*
+
+- 📖 **3 Production Demonstration Scenarios**: Detailed in [`docs/DEMO_SCRIPT_3_SCENARIOS.md`](docs/DEMO_SCRIPT_3_SCENARIOS.md) (`M001` Machine Diagnostics, `S001` Supplier SLAs, `P003` Quality Audit).
+- 📋 **Video Recording Shotlist**: Timed scene guide available in [`docs/DEMO_VIDEO_SHOTLIST.md`](docs/DEMO_VIDEO_SHOTLIST.md).
+
+---
+
 ## 📊 Verified Production Metrics & Verification
 
 All architecture decisions and parameter updates have been validated against a protected 30-case enterprise benchmark dataset and a 148-test automated regression suite:
